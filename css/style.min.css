@@ -13697,6 +13697,13 @@ label textarea {
 .menu__list-link {
   padding-bottom: 17px;
 }
+.menu__list-link.lang {
+  font-family: "Futura PT";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
 .menu__list-item:has(> ul) .menu__list-link {
   padding-right: 18px;
 }
@@ -13765,6 +13772,9 @@ label textarea {
   rotate: 180deg;
   translate: 0 -8px;
 }
+.menu__list-items {
+  position: relative;
+}
 .menu__list-items a {
   padding-bottom: 0;
 }
@@ -13775,8 +13785,49 @@ label textarea {
   transition: 0.4s all;
   display: block;
 }
-.menu__list-items input {
-  display: none;
+.menu__list #search-input {
+  position: absolute;
+  right: -20px;
+  top: 57px;
+  width: 292px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 17px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 1px 17px 0px rgba(50, 50, 50, 0.4);
+  padding: 11px 19px;
+  padding-right: 40px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+  font-family: "Futura PT";
+  font-size: 0.938rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: #868686;
+}
+.menu__list #search-input.active {
+  opacity: 1;
+  visibility: visible;
+}
+.menu__list #search-close {
+  position: absolute;
+  right: -5px;
+  top: 73px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.menu__list #search-close.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
 }
 .menu__list-link.eyes {
   padding: 17px 18px 17px 0;
@@ -13850,6 +13901,9 @@ label textarea {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+}
+.menu__list-lang a {
+  color: #235B76;
 }
 .menu__list-lang__item {
   color: #235B76;
@@ -13985,8 +14039,11 @@ label textarea {
        CALENDAR
     **********************
 **********************/
-.calendar__main-item img {
+.calendar__item-main img {
   border-radius: 20px;
+}
+.calendar__item-main a {
+  display: block;
 }
 .calendar__main-content {
   background: #FBFBFB;
@@ -14001,7 +14058,7 @@ label textarea {
   flex-direction: column;
   gap: 18px;
 }
-.calendar__main-content h3 {
+.calendar__main-content a {
   font-family: "Futura PT";
   font-size: 1.25rem;
   font-weight: 700;
@@ -14010,7 +14067,7 @@ label textarea {
   padding-bottom: 16px;
   position: relative;
 }
-.calendar__main-content h3::after {
+.calendar__main-content a::after {
   content: "";
   position: absolute;
   background-size: contain;
@@ -14032,6 +14089,14 @@ label textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+.calendar__main-content div .location {
+  font-weight: 400;
+  padding-bottom: 0;
+  color: #868686;
+}
+.calendar__main-content div .location::after {
+  background-color: transparent;
 }
 .calendar .col-lg-7 {
   display: -webkit-box;
@@ -14073,7 +14138,7 @@ label textarea {
   padding-top: 17px;
   padding-bottom: 16px;
 }
-.calendar__item .calendar__content h3 {
+.calendar__item .calendar__content a {
   font-family: "Futura PT";
   font-size: 1.25rem;
   font-weight: 700;
@@ -14082,7 +14147,7 @@ label textarea {
   padding-bottom: 16px;
   position: relative;
 }
-.calendar__item .calendar__content h3::after {
+.calendar__item .calendar__content a::after {
   content: "";
   position: absolute;
   background-size: contain;
@@ -14098,6 +14163,14 @@ label textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+.calendar__item .calendar__content div .location {
+  font-weight: 400;
+  padding-bottom: 0;
+  color: #868686;
+}
+.calendar__item .calendar__content div .location::after {
+  background-color: transparent;
 }
 /**********************
     **********************
@@ -15392,6 +15465,8 @@ label textarea {
 .footer .social__links a img {
   width: 100%;
   aspect-ratio: 1/1;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .footer .social__links a:hover {
   opacity: 1;
