@@ -13353,11 +13353,11 @@ h3 {
   top: 0;
 }
 
-.events__item h4, .news__content h3 {
+.events__item h4, .news__slider-item {
   padding-bottom: 16px;
   position: relative;
 }
-.events__item h4::after, .news__content h3::after {
+.events__item h4::after, .news__slider-item::after {
   content: "";
   position: absolute;
   background-size: contain;
@@ -14268,6 +14268,9 @@ label textarea {
        NEWS
     **********************
 **********************/
+.news {
+  text-wrap: wrap;
+}
 .news__content {
   padding: 17px 23px 29px 23px;
 }
@@ -14276,6 +14279,14 @@ label textarea {
   font-size: 1.125rem;
   font-weight: 700;
   color: #222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.news__content h3::after {
+  top: -10px;
 }
 .news__slider {
   position: relative;
@@ -14292,6 +14303,11 @@ label textarea {
   background: #fff;
   border-radius: 20px;
   position: relative;
+  padding-bottom: 0;
+}
+.news__slider-item::after {
+  bottom: 53px;
+  left: 23px;
 }
 .news__slider-item img {
   border-radius: 20px;
