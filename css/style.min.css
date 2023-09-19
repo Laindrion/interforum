@@ -13639,9 +13639,7 @@ label textarea {
 }
 
 #sidebar-menu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 #sidebar-menu-close {
@@ -13766,6 +13764,7 @@ label textarea {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  z-index: 10;
 }
 .menu__list-item > ul li a {
   color: #235B76;
@@ -14916,6 +14915,7 @@ label textarea {
   background: #fff;
   border-radius: 20px;
   position: relative;
+  height: 100%;
 }
 .events__item h4 {
   font-family: "Futura PT";
@@ -15439,6 +15439,40 @@ label textarea {
 
 /**********************
     **********************
+       NEWS POST
+    **********************
+**********************/
+.news__post {
+  text-wrap: wrap;
+}
+.news__post-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.news__post-top h2 {
+  margin: 0;
+  max-width: 80%;
+}
+.news__post-top a {
+  color: #0A3C55;
+}
+.news__post h2 {
+  width: 100%;
+}
+.news__post p {
+  width: 100%;
+  font-weight: 300;
+}
+
+/**********************
+    **********************
        FOOTER
     **********************
 **********************/
@@ -15594,10 +15628,11 @@ label textarea {
     gap: 35px;
     z-index: 100000;
     width: 75%;
-    height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     position: fixed;
     top: 0;
+    bottom: 0;
     right: 0;
     padding: 47px 37px 26px 27px;
     background: #0A3C55;
@@ -15622,6 +15657,9 @@ label textarea {
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
     transition: 0.4s all;
+  }
+  .menu__list-inner .menu__list-item {
+    margin-top: 30px;
   }
   .menu__list-inner .menu__list-item ul {
     position: static;
@@ -15660,6 +15698,7 @@ label textarea {
     transition: 0.4s all;
     display: grid;
     grid-template-rows: auto 0fr;
+    margin-top: 30px;
   }
   .menu__list-items.eyes.mobile:hover {
     grid-template-rows: auto 1fr;
