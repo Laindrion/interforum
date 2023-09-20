@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" id="html-dom">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interforum</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <ul class="menu__list">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <div class="menu__list-inner" id="sidebar-menu">
+
+                    <a class="logo mobile" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+
+                    <button id="sidebar-menu-close">
+                        <img src="images/close.svg" alt="">
+                    </button>
+                    <li class="menu__list-items eyes mobile">
+                        <a class="menu__list-link eyes mobile" href="#">
+                            <img src="images/eye.svg" alt="">
+                        </a>
+                        <ul>
+                            <li id="fonts-plus">
+                                <a href="#">
+                                    A+
+                                </a>
+                            </li>
+                            <li id="fonts-standart">
+                                <a href="#">
+                                    A
+                                </a>
+                            </li>
+                            <li id="fonts-minus">
+                                <a href="#">
+                                    A-
+                                </a>
+                            </li>
+                            <li id="color">
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            О нас
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Об учреждении
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Руководство
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Организационная структура
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Общая информация
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Организационная структура
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Аналитика
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Мероприятия
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Сотрудничество
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Для СМИ
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Галерея
+                        </a>
+
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Новости
+                        </a>
+                    </li>
+                </div>
+
+                <div class="menu__list-inner__cover">
+                    <li class="menu__list-items lang">
+                        <span class="menu__list-link lang">
+                            RU
+                            <span class="menu__list-lang">
+                                <a class="menu__list-lang__item" href="#">
+                                    ENG
+                                </a>
+                                <a class="menu__list-lang__item" href="#">
+                                    UZB
+                                </a>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="menu__list-items">
+                        <a class="menu__list-link search" href="#" id="search-btn">
+                            <img src="images/search.svg" alt="search">
+                        </a>
+                        <input type="text" id="search-input" placeholder="Поиск...">
+
+                        <button id="search-close">
+                            <img src="images/close.svg" alt="">
+                        </button>
+                    </li>
+
+                    <li class="menu__list-items">
+                        <a class="menu__list-link eyes" href="#">
+                            <img src="images/eye.svg" alt="">
+                        </a>
+                        <ul>
+                            <li id="fonts-plus">
+                                <a href="#">
+                                    A+
+                                </a>
+                            </li>
+                            <li id="fonts-standart">
+                                <a href="#">
+                                    A
+                                </a>
+                            </li>
+                            <li id="fonts-minus">
+                                <a href="#">
+                                    A-
+                                </a>
+                            </li>
+                            <li id="color">
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+
+                <a class="logo mobile" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <div class="burger__btn" id="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+
+<main>
+    <section class="section__header">
+        <div class="container">
+            <div class="section__header-inner">
+                <p class="section__text">
+                    Главная/Сотрудничество
+                </p>
+                <h2 class="section__title">
+                    Сотрудничество
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="cooperation">
+        <div class="container">
+            <div class="cooperation__slider">
+                <div class="cooperation__slider-item">
+                    <div>
+                        <img src="images/cooperation-img-1.jpg" alt="">
+                    </div>
+
+                    <div class="cooperation__slider-text__cover">
+                        <p> Если Ваша компания заинтересована стать спонсором мероприятия, </p>
+                        <p> Вы можете связаться с отделом маркетинга </p>
+                        <p> - направив письмо на <a href="mailto:info@interforum.uz">info@interforum.uz</a>;</p>
+                        <p> - позвонив по телефону<a href="tel:998555080700"> +998 55-508-07-00</a></p>
+                    </div>
+                </div>
+
+                <div class="cooperation__slider-item">
+                    <div>
+                        <img src="images/cooperation-img-2.jpg" alt="">
+                    </div>
+
+                    <div class="cooperation__slider-text__cover">
+                        <p> Если Ваша компания заинтересована стать спонсором мероприятия, </p>
+                        <p> Вы можете связаться с отделом маркетинга </p>
+                        <p> - направив письмо на <a href="mailto:info@interforum.uz">info@interforum.uz</a>;</p>
+                        <p> - позвонив по телефону<a href="tel:998555080700"> +998 55-508-07-00</a></p>
+                    </div>
+                </div>
+
+                <div class="cooperation__slider-item">
+                    <div>
+                        <img src="images/cooperation-img-3.jpg" alt="">
+                    </div>
+
+                    <div class="cooperation__slider-text__cover">
+                        <p> Если Ваша компания заинтересована стать спонсором мероприятия, </p>
+                        <p> Вы можете связаться с отделом маркетинга </p>
+                        <p> - направив письмо на <a href="mailto:info@interforum.uz">info@interforum.uz</a>;</p>
+                        <p> - позвонив по телефону<a href="tel:998555080700"> +998 55-508-07-00</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+
+            <div class="footer__inner">
+                <a class="footer__logo" href="#">
+                    <img src="images/logo.png" alt="footer logo">
+                </a>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#">
+                            О нас
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Аналитика
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Мероприятия
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Сотрудничество
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#">
+                            Для СМИ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Комплекс услуг
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__inner socials">
+                <p>
+                    Соц.сети:
+                </p>
+                <div class="social__links">
+                    <a href="#">
+                        <img src="images/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/telegram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/youtube.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
