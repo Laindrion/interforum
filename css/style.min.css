@@ -13206,7 +13206,7 @@ table {
 h2 {
   font-family: "Futura PT";
   font-size: 2.375rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #222222;
   max-width: 520px;
@@ -13217,7 +13217,7 @@ h2 {
 h3 {
   font-family: "Futura PT";
   font-size: 1.375rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   color: #222222;
 }
@@ -13229,7 +13229,7 @@ h3 {
   border: 2px solid #0A3C55;
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #0A3C55;
   position: relative;
@@ -13304,7 +13304,7 @@ h3 {
   position: relative;
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.375;
   color: #0A3C55;
 }
@@ -13504,7 +13504,7 @@ button {
   transition-duration: 0.1s;
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   color: #222222;
   position: relative;
@@ -13574,7 +13574,7 @@ img {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 400;
   color: #222222;
 }
 
@@ -13594,7 +13594,7 @@ strong {
 .section__header .section__title {
   font-family: "Futura PT";
   font-size: 2.813rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #0A3C55;
   margin-bottom: 0;
@@ -13699,7 +13699,7 @@ label textarea {
 .menu__list a {
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
 }
 .menu__list-item {
@@ -13711,7 +13711,7 @@ label textarea {
 .menu__list-link.lang {
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   cursor: pointer;
 }
@@ -13836,6 +13836,7 @@ label textarea {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  z-index: 10;
 }
 .menu__list-items:hover > ul {
   -webkit-transform: scaleY(1);
@@ -13936,6 +13937,7 @@ label textarea {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  z-index: 10;
 }
 .menu__list-lang a {
   color: #235B76;
@@ -14002,18 +14004,32 @@ label textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.4;
+  z-index: -1;
 }
 .hero h1 {
   font-family: "Futura PT";
   font-size: 8.75rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   padding-top: 223px;
   padding-bottom: 54px;
 }
 .hero p {
   line-height: 1.625rem;
-  color: #C8C8C8;
+  color: #fff;
   max-width: 480px;
   margin-left: auto;
   font-weight: 300;
@@ -14061,7 +14077,7 @@ label textarea {
 .opportunity__item p strong {
   font-family: "Futura PT";
   font-size: rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #222222;
 }
@@ -14096,7 +14112,7 @@ label textarea {
 .calendar__main-content a {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.375rem;
   color: #222222;
   padding-bottom: 16px;
@@ -14176,7 +14192,7 @@ label textarea {
 .calendar__item .calendar__content a {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.375rem;
   color: #222222;
   padding-bottom: 16px;
@@ -14276,7 +14292,7 @@ label textarea {
 .news__content h3 {
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #222222;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -14340,7 +14356,7 @@ label textarea {
   text-wrap: balance;
   font-family: "Futura PT";
   font-size: 1.563rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.1rem;
   color: #fff;
 }
@@ -14426,7 +14442,7 @@ label textarea {
 .contact__about__item h3 {
   font-family: "Futura PT";
   font-size: 1.625rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #222222;
   margin-bottom: 30px;
@@ -14639,7 +14655,7 @@ label textarea {
 .information__inner h5 {
   font-family: "Futura PT";
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   color: #222222;
   text-align: right;
@@ -14649,7 +14665,7 @@ label textarea {
   margin: 0 auto;
   font-family: "Futura PT";
   font-size: 1.375rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   color: #0A3C55;
 }
@@ -14666,7 +14682,7 @@ label textarea {
 .feedback h5 {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #222222;
   text-align: left;
@@ -14691,7 +14707,7 @@ label textarea {
 .feedback__form h3 {
   font-family: "Futura PT";
   font-size: 2.125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #222222;
   margin-bottom: 30px;
@@ -14702,7 +14718,7 @@ label textarea {
   border-radius: 20px;
   font-family: "Futura PT";
   font-size: rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #0A3C55;
   width: 100%;
@@ -14724,7 +14740,7 @@ label textarea {
 .gallery .tab-link, .events .tab-link, .analytics .tab-link {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.375rem;
   color: #868686;
   padding: 0 92px;
@@ -14771,7 +14787,7 @@ label textarea {
 .analytics__item h4 {
   font-family: "Futura PT";
   font-size: 1.188rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.25rem;
   color: #2F3734;
   position: static;
@@ -14920,7 +14936,7 @@ label textarea {
 .events__item h4 {
   font-family: "Futura PT";
   font-size: 1.188rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.375rem;
   color: #222222;
 }
@@ -14985,7 +15001,7 @@ label textarea {
 .post h4 {
   font-family: "Futura PT";
   font-size: 1.438rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #222222;
 }
@@ -15040,7 +15056,7 @@ label textarea {
   background: #0A3C55;
   font-family: "Futura PT";
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #fff;
 }
@@ -15155,7 +15171,7 @@ label textarea {
 .post__slider-days__item h5 {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   color: #868686;
 }
@@ -15250,7 +15266,7 @@ label textarea {
 .post__slider-event__item h5 {
   font-family: "Futura PT";
   font-size: 1.188rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #222222;
 }
@@ -15262,13 +15278,13 @@ label textarea {
   color: #868686;
 }
 .post__slider-event__item-speaker strong {
-  font-weight: 700;
+  font-weight: 400;
   color: #0A3C55;
 }
 .post__slider-event .date {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #fff;
   display: -webkit-box;
@@ -15332,7 +15348,7 @@ label textarea {
 .accreditation__rules h4 {
   font-family: "Futura PT";
   font-size: 1.188rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625;
   color: #222222;
 }
@@ -15359,7 +15375,7 @@ label textarea {
 .gallery__photo-item .date, .gallery__video-item .date {
   font-family: "Futura PT";
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.625rem;
   color: #fff;
   display: -webkit-box;
@@ -15602,7 +15618,7 @@ label textarea {
   gap: 5px;
 }
 .cooperation__slider-item .cooperation__slider-text__cover a {
-  font-weight: 700;
+  font-weight: 400;
 }
 .cooperation__slider .slick-dots {
   display: -webkit-box;
