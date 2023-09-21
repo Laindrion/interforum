@@ -5,196 +5,454 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interforum</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="header__wrapper">
-            <ul class="menu__list">
-                <a class="logo" href="#">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+    <header class="header" id="header">
+        <div class="header__top">
 
-                <div class="menu__list-inner" id="sidebar-menu">
+            <nav class="navbar__top">
+                <div class="container">
+                    <div class="navbar__top-wrapper">
 
-                    <a class="logo mobile" href="#">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-
-                    <button id="sidebar-menu-close">
-                        <img src="images/close.svg" alt="">
-                    </button>
-                    <li class="menu__list-items eyes mobile">
-                        <a class="menu__list-link eyes mobile" href="#">
-                            <img src="images/eye.svg" alt="">
-                        </a>
-                        <ul>
-                            <li id="fonts-plus">
-                                <a href="#">
-                                    A+
-                                </a>
-                            </li>
-                            <li id="fonts-standart">
-                                <a href="#">
-                                    A
-                                </a>
-                            </li>
-                            <li id="fonts-minus">
-                                <a href="#">
-                                    A-
-                                </a>
-                            </li>
-                            <li id="color">
-                                <img src="" alt="">
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            О нас
-                        </a>
-                        <ul>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Об учреждении
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Руководство
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Организационная структура
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Общая информация
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Организационная структура
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Аналитика
-                        </a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Мероприятия
-                        </a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Сотрудничество
-                        </a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Для СМИ
-                        </a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Галерея
+                        <a class="logo logo-miit" href="index.html">
+                            <img src="images/logo-miit.png" alt="logo">
                         </a>
 
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            Новости
-                        </a>
-                    </li>
-                </div>
+                        <div class="navbar__top-item">
+                            <a class="navbar__top-suptitle" href="helpline.html">
+                                Телефон доверия:
+                            </a>
+                            <a class="navbar__top-item-phone" href="tel:998712385005">
+                                +998 (71) 238-50-05
+                            </a>
+                        </div>
 
-                <div class="menu__list-inner__cover">
-                    <li class="menu__list-items lang">
-                        <span class="menu__list-link lang">
-                            RU
-                            <span class="menu__list-lang">
-                                <a class="menu__list-lang__item" href="#">
-                                    ENG
-                                </a>
-                                <a class="menu__list-lang__item" href="#">
-                                    UZB
-                                </a>
+                        <div class="navbar__top-item">
+                            <span class="navbar__top-suptitle">
+                                Телефон министерства:
                             </span>
-                        </span>
-                    </li>
-                    <li class="menu__list-items">
-                        <a class="menu__list-link search" href="#" id="search-btn">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                        <input type="text" id="search-input" placeholder="Поиск...">
+                            <a class="navbar__top-item-phone" href="tel:998712440143">
+                                +998 (71) 238-50-00
+                            </a>
+                        </div>
 
-                        <button id="search-close">
-                            <img src="images/close.svg" alt="">
-                        </button>
-                    </li>
 
-                    <li class="menu__list-items">
-                        <a class="menu__list-link eyes" href="#">
-                            <img src="images/eye.svg" alt="">
-                        </a>
-                        <ul>
-                            <li id="fonts-plus">
-                                <a href="#">
-                                    A+
-                                </a>
-                            </li>
-                            <li id="fonts-standart">
-                                <a href="#">
-                                    A
-                                </a>
-                            </li>
-                            <li id="fonts-minus">
-                                <a href="#">
-                                    A-
-                                </a>
-                            </li>
-                            <li id="color">
-                                <img src="" alt="">
-                            </li>
-                        </ul>
-                    </li>
+                        <div class="navbar__top-item lang">
+                            <span class="navbar__top-suptitle">
+                                Язык:
+                            </span>
+                            <span class="navbar__top-item-lang" href="#">
+                                RU
+                                <span class="navbar__top-item-lang__inner" id="navbar-top-item-lang-inner">
+                                    <a href="#">
+                                        ENG
+                                    </a>
+                                    <a href="#">
+                                        UZB
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="navbar__interactions mobile">
+                            <a class="navbar__font-size" href="#">
+                                <img src="images/glasses-dark.svg" alt="">
+
+
+                                <ul>
+                                    <li id="fonts-plus">
+                                        A+
+                                    </li>
+                                    <li id="fonts-standart">
+                                        A
+                                    </li>
+                                    <li id="fonts-minus">
+                                        A-
+                                    </li>
+                                    <li id="color">
+                                        <img src="" alt="">
+                                    </li>
+                                </ul>
+                            </a>
+                            <a href="#">
+                                <img src="images/sound-dark.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
+            </nav>
 
-                <a class="logo mobile" href="#">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar__wrapper">
+                        <div class="navbar__interactions">
+                            <a class="logo" href="index.html">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <a class="navbar__font-size" href="#">
+                                <img src="images/glasses.svg" alt="">
 
-                <div class="burger__btn" id="burger-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
+                                <ul>
+                                    <li id="fonts-plus">
+                                        A+
+                                    </li>
+                                    <li id="fonts-standart">
+                                        A
+                                    </li>
+                                    <li id="fonts-minus">
+                                        A-
+                                    </li>
+                                    <li id="color">
+                                        <img src="" alt="">
+                                    </li>
+                                </ul>
+                            </a>
+                            <a href="#">
+                                <img src="images/sound.svg" alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="navbar__inner">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+
+                                    <ul class="menu__list-dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Общая информция
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Организационная Структура
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Руководство
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                География
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                FAQ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Контакты
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Мероприятия
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Сотрудничество
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для СМИ
+                                    </a>
+
+                                    <ul class="menu__list-dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Пресс-Мероприятия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Правила аккредитации
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Политика Упоминаний
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Открытые данные
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="navbar__inner-items">
+                                <div id="navbar-search">
+                                    <input type="text" placeholder="Поиск...">
+                                    <button id="search">
+                                        <img src="images/search-header.svg" alt="">
+                                    </button>
+                                    <button id="close-search">
+                                        <img src="images/close-header.svg" alt="">
+                                    </button>
+                                </div>
+                                <a class="navbar__inner-item" id="header-search" href="#">
+                                    <img src="images/search.svg" alt="">
+                                </a>
+                                <a class="navbar__inner-item" href="#" id="burger-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-            </ul>
+            </nav>
+
         </div>
+
+        <nav class="burger__navbar">
+            <div class="container">
+                <div class="burger__navbar-wrapper">
+                    <ul>
+                        <li>
+                            <a class="burger__navbar-link tab-link active" href="#">
+                                О нас
+                            </a>
+                            <ul class="tab-content active">
+                                <li>
+                                    <a href="#">
+                                        Общая информация
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Организационная Структура
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Руководство
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        География
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link tab-link" href="#">
+                                Мероприятия
+                            </a>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link tab-link" href="#">
+                                Сотрудничество
+                            </a>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Для СМИ
+                            </a>
+                            <ul class="tab-content ">
+                                <li>
+                                    <a href="#">
+                                        Пресс-Мероприятия
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Правила аккредитации
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Политика Упоминаний
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Галерея
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Открытые данные
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="burger-menu-close">
+                    <img src="images/close.svg" alt="">
+                </div>
+            </div>
+        </nav>
     </header>
 
 <main class="main">
     <section class="hero">
-        <div class="container">
-            <h1>
-                INTERFORUM
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+        <div class="hero__wrapper">
+
+            <div class="hero__slider">
+                <div class="hero__slider-item">
+                    <div class="hero__slider-img" style="background-image: url('images/hero-img.jpg');">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent">
+                <div class="container">
+
+                    <div class="recent__box">
+                        <div class="recent__item">
+                            <div class="recent__content">
+                                <span class="recent__date">
+                                    Май 8, 2023
+                                </span>
+                                <div class="recent__title">
+                                    Узбекистан и Япония открывают новые направления партнерства
+                                </div>
+                                <a class="recent__btn" href="#">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="recent__img">
+                                <img src="images/recent-1.jpg" alt="recent news image">
+                            </div>
+                        </div>
+
+                        <div class="recent__item">
+                            <div class="recent__content">
+                                <span class="recent__date">
+                                    Май 8, 2023
+                                </span>
+                                <div class="recent__title">
+                                    Узбекистан и Япония открывают новые направления партнерства
+                                </div>
+                                <a class="recent__btn" href="#">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="recent__img">
+                                <img src="images/recent-1.jpg" alt="recent news image">
+                            </div>
+                        </div>
+
+                        <div class="recent__item">
+                            <div class="recent__content">
+                                <span class="recent__date">
+                                    Май 8, 2023
+                                </span>
+                                <div class="recent__title">
+                                    Узбекистан и Япония открывают новые направления партнерства
+                                </div>
+                                <a class="recent__btn" href="#">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="recent__img">
+                                <img src="images/recent-1.jpg" alt="recent news image">
+                            </div>
+                        </div>
+
+                        <div class="recent__item">
+                            <div class="recent__content">
+                                <span class="recent__date">
+                                    Май 8, 2023
+                                </span>
+                                <div class="recent__title">
+                                    Узбекистан и Япония открывают новые направления партнерства
+                                </div>
+                                <a class="recent__btn" href="#">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="recent__img">
+                                <img src="images/recent-1.jpg" alt="recent news image">
+                            </div>
+                        </div>
+
+                        <div class="recent__item">
+                            <div class="recent__content">
+                                <span class="recent__date">
+                                    Май 8, 2023
+                                </span>
+                                <div class="recent__title">
+                                    Узбекистан и Япония открывают новые направления партнерства
+                                </div>
+                                <a class="recent__btn" href="#">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="recent__img">
+                                <img src="images/recent-1.jpg" alt="recent news image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
