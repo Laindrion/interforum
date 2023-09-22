@@ -13762,6 +13762,9 @@ strong {
 .section__header {
   padding-bottom: 30px;
 }
+.section__header:first-child {
+  padding-top: 22px;
+}
 .section__header .section__header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14665,6 +14668,10 @@ html.modal__open {
   max-width: 265px;
   margin-bottom: 21px;
   margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .recent__btn {
   font-family: "Futura PT";
@@ -14757,6 +14764,9 @@ html.modal__open {
        CALENDAR
     **********************
 **********************/
+.calendar .fas.fa-map-marker-alt {
+  display: none;
+}
 .calendar__item-main img {
   border-radius: 20px;
 }
@@ -15282,6 +15292,12 @@ html.modal__open {
        INFORMATION
     **********************
 **********************/
+.information .news-child-img {
+  display: none;
+}
+.information ul.slick-dots {
+  list-style: none;
+}
 .information__inner {
   text-wrap: wrap;
   background: #fff;
@@ -16249,6 +16265,9 @@ html.modal__open {
   gap: 20px;
   margin-bottom: 50px;
 }
+.organisation__structure .tf-tree {
+  overflow: inherit;
+}
 .organisation__structure .tree_top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16366,6 +16385,37 @@ html.modal__open {
 .organisation__structure .tree_third li:first-child a::before {
   display: block;
   height: 17px;
+}
+.organisation__structure .tree_fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 0;
+  position: relative;
+}
+.organisation__structure .tree_fourth li {
+  padding: 0;
+  margin: 0;
+}
+.organisation__structure .tree_fourth a {
+  padding: 0;
+  margin: 0;
+}
+.organisation__structure .tree_fourth a.tf-nc:first-child:after {
+  border-left: 0.0625em solid #000;
+  content: "";
+  display: block;
+  height: 7.6rem;
+  left: -11px;
+  position: absolute;
+  width: 0.0625em;
+  top: 75px;
 }
 
 /**********************
