@@ -16358,6 +16358,15 @@ html.modal__open {
        ORGANISATION STRUCTURE
     **********************
 **********************/
+.organisation__structure {
+  text-wrap: balance;
+}
+.organisation__structure ul li {
+  margin-left: 0;
+  line-height: none;
+  font-weight: none;
+  font-size: none;
+}
 .organisation__structure h2 {
   text-align: center;
   max-width: 100%;
