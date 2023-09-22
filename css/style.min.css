@@ -14030,6 +14030,7 @@ label textarea {
   -ms-flex-align: center;
   align-items: center;
   gap: 15px;
+  margin-top: 12px;
 }
 .navbar__interactions a {
   display: block;
@@ -14970,6 +14971,10 @@ html.modal__open {
        SUB ORGANISATIONS
     **********************
 **********************/
+.sub__organisations,
+.useful__links {
+  text-align: center;
+}
 .sub__organisations-item,
 .useful__links-item {
   display: -webkit-box;
@@ -14989,6 +14994,8 @@ html.modal__open {
 .useful__links-item img {
   aspect-ratio: 4/2;
   width: 290px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /**********************
@@ -16233,6 +16240,53 @@ html.modal__open {
 .news__post p {
   width: 100%;
   font-weight: 300;
+}
+
+.news-child-title {
+  margin-top: 20px;
+}
+.news-child-title h2 {
+  max-width: 100%;
+}
+
+.news-child-img {
+  max-width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.news-child-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.news-child-content p {
+  font-family: "Futura PT";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 160%;
+  color: #868686;
+  margin: 10px 0;
+  text-wrap: wrap;
+}
+
+.news-child-footer-meta {
+  display: none;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 
 /**********************
