@@ -13376,6 +13376,7 @@ h2 {
   max-width: 520px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 h3 {
@@ -13397,6 +13398,9 @@ h3 {
   line-height: 1.625rem;
   color: #0A3C55;
   position: relative;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
 }
 .offer a::after, .opportunity__btn::after, .section__top a::after {
   content: "";
@@ -13412,6 +13416,16 @@ h3 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-size: contain;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.offer a:hover, .opportunity__btn:hover, .section__top a:hover {
+  color: #235B76;
+  border-color: #235B76;
+}
+.offer a:hover::after, .opportunity__btn:hover::after, .section__top a:hover::after {
+  right: 15px;
 }
 
 .post__slider-event__item .location, .events__item .location, .calendar__item .calendar__content div .location, .calendar__main-content div .location {
@@ -13533,7 +13547,7 @@ h3 {
   bottom: 0;
 }
 
-.opportunity::before {
+.events::before, .management::before, .sub__organisations::before, .opportunity::before {
   content: "";
   position: absolute;
   background-image: url("../images/deco-left.svg");
@@ -14190,6 +14204,7 @@ label textarea {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  overflow: hidden;
 }
 .menu__list-item .menu__list-dropdown a {
   font-family: "Arsenal", sans-serif;
@@ -14199,6 +14214,9 @@ label textarea {
   color: #fff;
   display: block;
   padding: 16px 18px;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
 }
 .menu__list-item .menu__list-dropdown li {
   position: relative;
@@ -14241,6 +14259,7 @@ label textarea {
   display: block;
 }
 .menu__list-item .menu__list-dropdown li:hover {
+  background: #235B76;
   padding-left: 5px;
 }
 .menu__list-item .menu__list-dropdown .menu__list-inner__dropdown {
@@ -14738,6 +14757,9 @@ html.modal__open {
   color: #0A3C55;
   position: relative;
   padding-right: 30px;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
 }
 .recent__btn::after {
   content: "";
@@ -14752,6 +14774,12 @@ html.modal__open {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.recent__btn:hover::after {
+  right: -5px;
 }
 .recent__img {
   width: 163px;
@@ -14996,6 +15024,11 @@ html.modal__open {
   width: 290px;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.sub__organisations::before {
+  top: -40px;
+  z-index: 1;
 }
 
 /**********************
@@ -15312,6 +15345,9 @@ html.modal__open {
 .management {
   padding-top: 30px;
 }
+.management::before {
+  top: 92px;
+}
 .management .row {
   row-gap: 15px;
 }
@@ -15374,7 +15410,7 @@ html.modal__open {
   text-wrap: wrap;
   background: #fff;
   border-radius: 20px;
-  text-align: center;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15661,6 +15697,9 @@ html.modal__open {
 **********************/
 .events {
   text-wrap: wrap;
+}
+.events::before {
+  bottom: 60px;
 }
 .events__img {
   display: block;
@@ -16596,9 +16635,12 @@ html.modal__open {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  padding: 5px 10px;
 }
 .footer__list li a:hover {
   color: #fff;
+  background: #235B76;
+  border-radius: 5px;
 }
 .footer a {
   color: #fff;
