@@ -13533,11 +13533,11 @@ h3 {
   top: 0;
 }
 
-.events__item h4, .news__slider-item {
+.region__title::after, .events__item h4, .news__slider-item {
   padding-bottom: 16px;
   position: relative;
 }
-.events__item h4::after, .news__slider-item::after {
+.region__title::after, .events__item h4::after, .news__slider-item::after {
   content: "";
   position: absolute;
   background-size: contain;
@@ -13549,8 +13549,8 @@ h3 {
   bottom: 0;
 }
 
-.events::before, .feedback::before, .management::before, .contact::before,
-.contact__about::before, .sub__organisations::before, .opportunity::before {
+.events::before, .management::before, .contact::before,
+.contact__about::before, .useful__links::before, .opportunity::before {
   content: "";
   position: absolute;
   background-image: url("../images/deco-left.svg");
@@ -13645,7 +13645,7 @@ body {
 }
 
 .header.sticky + .main {
-  padding-top: 166px;
+  padding-top: 137px;
 }
 
 .container {
@@ -13901,13 +13901,24 @@ label textarea {
 
 /**********************
     **********************
-     NAVBAR
+     Header
     **********************
 **********************/
+.header {
+  height: 14vh;
+}
+.header__top {
+  height: 100%;
+}
+
 /* Start of header */
 .navbar__top {
   background: #fff;
   padding: 11px 0;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .navbar__top-wrapper {
   display: -webkit-box;
@@ -13919,6 +13930,7 @@ label textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  height: 100%;
 }
 .navbar__top-item {
   display: -webkit-box;
@@ -14027,6 +14039,7 @@ label textarea {
 .navbar {
   background: #0A3C55;
   padding: 0 0;
+  height: 50%;
 }
 .navbar__wrapper {
   display: -webkit-box;
@@ -14507,23 +14520,56 @@ html.modal__open {
        HERO
     **********************
 **********************/
-.header.sticky {
+.hero {
+  position: relative;
+}
+.hero .hero__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  padding: 0 3rem;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
-.header.sticky + .main {
-  padding-top: 147px;
+.hero .hero__arrows .hero__arrow-left {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 30px;
 }
-
+.hero .hero__arrows .hero__arrow-right {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 30px;
+}
 .hero__wrapper {
   position: relative;
 }
+.hero__slider {
+  height: 86vh;
+}
 .hero__slider-item {
   position: relative;
+  height: 86vh;
 }
 .hero__slider-item__content {
   position: absolute;
@@ -14679,7 +14725,7 @@ html.modal__open {
 }
 .recent__box {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   right: -235px;
   background: #fff;
   width: 1400px;
@@ -15038,6 +15084,10 @@ html.modal__open {
   justify-content: space-around;
 }
 
+.useful__links::before {
+  bottom: 30px;
+}
+
 /**********************
     **********************
        OFFER
@@ -15074,10 +15124,9 @@ html.modal__open {
 **********************/
 .news {
   text-wrap: wrap;
-  background-color: #FBFBFB;
 }
 .news::after {
-  z-index: 1;
+  z-index: -1;
 }
 .news::after {
   width: 289px;
@@ -15696,9 +15745,6 @@ html.modal__open {
        FEEDBACK
     **********************
 **********************/
-.feedback::before {
-  z-index: 0;
-}
 .feedback h5 {
   font-family: "Futura PT";
   font-size: 1.25rem;
@@ -16945,12 +16991,408 @@ html.modal__open {
 
 /**********************
     **********************
+       ABOUT UZBEKISTAN
+    **********************
+**********************/
+/* Uzbekistan Info */
+.uzbekistan {
+  padding-top: 50px;
+  padding-bottom: 66px;
+}
+.uzbekistan h3 {
+  margin-bottom: 17px;
+}
+.uzbekistan h2 {
+  margin-bottom: 50px;
+}
+.uzbekistan .col-lg-6 img {
+  width: 100%;
+  height: 100%;
+}
+.uzbekistan h4 {
+  font-family: "Futura PT";
+  font-size: 19pxrem;
+  font-weight: 700;
+  line-height: 130%;
+  color: #222222;
+  margin-bottom: 17px;
+}
+.uzbekistan .hymn {
+  max-width: 286px;
+}
+.uzbekistan.dark {
+  background: #FBFBFB;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.uzbekistan__info {
+  /* width */
+  /* Track */
+  /* Handle */
+  padding-bottom: 74px;
+}
+.uzbekistan__info ::-webkit-scrollbar {
+  width: 11px;
+}
+.uzbekistan__info ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 17px 0px rgba(147, 147, 147, 0.15);
+  box-shadow: 0px 1px 17px 0px rgba(147, 147, 147, 0.15);
+}
+.uzbekistan__info ::-webkit-scrollbar-thumb {
+  background: #0A3C55;
+  border-radius: 5px;
+}
+.uzbekistan__info .region__map svg {
+  width: 100%;
+}
+.uzbekistan__info .region__list {
+  margin-top: 0;
+}
+.uzbekistan__info .region__list-item__info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.uzbekistan__info .region__list-item__info a {
+  padding: 0;
+}
+.uzbekistan__info .region__list-item__info a::before {
+  content: none;
+}
+.uzbekistan__info .region__list-item.active a {
+  padding: 0;
+}
+.uzbekistan__info .region__list-item.active a::before {
+  content: none;
+}
+.uzbekistan__info path:hover {
+  fill: #0f4e6e;
+}
+.uzbekistan__info p {
+  font-family: "Futura PT";
+  font-size: 17pxrem;
+  font-weight: 400;
+  line-height: 130%;
+  color: #868686;
+}
+
+/* Uzbekistan Symbol */
+.uzbekistan__symbol {
+  padding: 0 15px;
+  padding-top: 50px;
+  padding-bottom: 66px;
+}
+.uzbekistan__symbol h3 {
+  font-family: "Futura PT";
+  font-size: 19pxrem;
+  font-weight: 700;
+  line-height: 130%;
+  color: #222222;
+}
+.uzbekistan__symbol p {
+  font-family: "Futura PT";
+  font-size: 17pxrem;
+  font-weight: 400;
+  line-height: 130%;
+  color: #868686;
+}
+.uzbekistan__symbol p a {
+  text-decoration: underline;
+}
+.uzbekistan__symbol p img {
+  mix-blend-mode: darken;
+}
+.uzbekistan__symbol #speechArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+.uzbekistan__symbol h4 {
+  margin-top: 40px;
+}
+.uzbekistan__symbol p.title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 32pxrem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #222222;
+  text-align: center;
+  width: 100%;
+}
+.uzbekistan__symbol p.title span {
+  color: #222222;
+}
+.uzbekistan__symbol p.title strong {
+  font-family: "Futura PT";
+  font-size: 19pxrem;
+  font-weight: 700;
+  line-height: 130%;
+  color: #222222;
+}
+
+.uzbekistan__holidays-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.uzbekistan__holidays-item .row .col-lg-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.region {
+  padding-top: 60px;
+  padding-bottom: 69px;
+  background-image: url("../images/region-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Region Tab */
+  /* Region Map */
+  /* Region list */
+}
+.region ::-webkit-scrollbar {
+  width: 11px;
+}
+.region ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 17px 0px rgba(147, 147, 147, 0.15);
+  box-shadow: 0px 1px 17px 0px rgba(147, 147, 147, 0.15);
+}
+.region ::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5px;
+}
+.region__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 28pxrem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+  position: relative;
+  margin-bottom: 58px;
+}
+.region__title::after {
+  background: #fff;
+  bottom: -19px;
+}
+.region__tab {
+  margin-bottom: 37px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 47px;
+  max-width: 630px;
+}
+.region__tab-btn {
+  border: none;
+  background: transparent;
+  padding-bottom: 18px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 22pxrem;
+  font-weight: 700;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.19);
+}
+.region__tab-btn.active {
+  color: #fff;
+}
+.region__tab-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: none;
+}
+.region__tab-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.region__map path {
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.region__map path:hover {
+  fill: #fff;
+  fill-opacity: 1;
+  stroke-opacity: 1;
+}
+.region__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 9px;
+  height: 540px;
+  overflow-y: scroll;
+  margin-top: -80px;
+  padding-right: 12px;
+  /*Item*/
+}
+.region__list-item, .region__list-item-2 {
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 17px;
+  padding: 28px 40px 28px 23px;
+  /*Item title*/
+  /*Item inner container*/
+  /*Item Active*/
+}
+.region__list-item__title, .region__list-item-2__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 22pxrem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #222222;
+}
+.region__list-item__info-cover, .region__list-item-2__info-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.region__list-item__info-cover span, .region__list-item-2__info-cover span {
+  font-family: "Futura PT";
+  font-size: 15pxrem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #868686;
+}
+.region__list-item__info-cover a, .region__list-item-2__info-cover a {
+  font-family: "Arsenal", sans-serif;
+  font-size: 17pxrem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #222222;
+  position: relative;
+  padding-left: 30px;
+}
+.region__list-item__info-cover .region__phone::before, .region__list-item-2__info-cover .region__phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/phone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24pxpx;
+  height: 25pxpx;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.region__list-item__info-cover .region__mail::before, .region__list-item-2__info-cover .region__mail::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/messages-dark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25pxpx;
+  height: 24pxpx;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.region__list-item__info, .region__list-item-2__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+.region__list-item.active, .region__list-item-2.active {
+  background: #0A3C55;
+}
+.region__list-item.active .region__list-item__title, .region__list-item.active .region__list-item-2__title, .region__list-item-2.active .region__list-item__title, .region__list-item-2.active .region__list-item-2__title {
+  color: #fff;
+}
+.region__list-item.active a, .region__list-item-2.active a {
+  color: #fff;
+}
+.region__list-item.active a.region__phone::before, .region__list-item-2.active a.region__phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/phone-white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24pxpx;
+  height: 25pxpx;
+}
+.region__list-item.active a.region__mail::before, .region__list-item-2.active a.region__mail::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/messages.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25pxpx;
+  height: 24pxpx;
+}
+.region__list-item.active span, .region__list-item-2.active span {
+  color: #7A8390;
+}
+
+/**********************
+    **********************
        MEDIA QUERIES
     **********************
 **********************/
 @media (max-width: 1604px) {
   html {
     font-size: 15px;
+  }
+  .opportunity::before {
+    display: none;
   }
 }
 @media (max-width: 1527px) {
@@ -16977,6 +17419,9 @@ html.modal__open {
   }
 }
 @media (max-width: 1330px) {
+  .hero .hero__arrows {
+    top: 43vh;
+  }
   .menu__list-inner {
     gap: 20px;
   }
@@ -17190,9 +17635,6 @@ html.modal__open {
   .menu__list {
     display: none;
   }
-  .navbar__wrapper {
-    padding: 15px 0;
-  }
   .recent {
     margin-top: -10%;
   }
@@ -17208,6 +17650,12 @@ html.modal__open {
   }
 }
 @media (max-width: 1110px) {
+  .header {
+    height: auto;
+  }
+  .navbar__wrapper {
+    padding: 10px 0;
+  }
   .burger__navbar-wrapper {
     grid-template-columns: 1fr;
   }
@@ -17231,7 +17679,7 @@ html.modal__open {
 }
 @media (max-width: 992px) {
   .header.sticky + .main {
-    padding-top: 130px;
+    padding-top: 96px;
   }
   .header .menu__list {
     display: none;
