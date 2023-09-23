@@ -15442,6 +15442,9 @@ html.modal__open {
   gap: 30px;
   padding: 37px 60px 90px 63px;
 }
+.information__inner h2 {
+  max-width: 100%;
+}
 .information__inner p {
   font-family: "Futura PT";
   font-size: 1.0625rem;
@@ -16642,7 +16645,6 @@ html.modal__open {
 .department__info p {
   font-weight: 300;
 }
-
 /**********************
     **********************
        FOOTER
