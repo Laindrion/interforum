@@ -15074,7 +15074,10 @@ html.modal__open {
 **********************/
 .news {
   text-wrap: wrap;
-  background: #FBFBFB;
+  background-color: #FBFBFB;
+}
+.news::after {
+  z-index: 1;
 }
 .news::after {
   width: 289px;
