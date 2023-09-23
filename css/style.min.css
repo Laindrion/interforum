@@ -13549,7 +13549,7 @@ h3 {
   bottom: 0;
 }
 
-.events::before, .management::before, .contact::before,
+.events::before, .feedback::before, .management::before, .contact::before,
 .contact__about::before, .sub__organisations::before, .opportunity::before {
   content: "";
   position: absolute;
@@ -15074,6 +15074,7 @@ html.modal__open {
 **********************/
 .news {
   text-wrap: wrap;
+  background: #FBFBFB;
 }
 .news::after {
   width: 289px;
@@ -15494,6 +15495,9 @@ html.modal__open {
        FEEDBACK
     **********************
 **********************/
+.feedback::before {
+  z-index: 0;
+}
 .feedback h5 {
   font-family: "Futura PT";
   font-size: 1.25rem;
