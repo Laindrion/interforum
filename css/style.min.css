@@ -14300,9 +14300,9 @@ label textarea {
 }
 .menu__list-link {
   font-family: "Arsenal", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 160%;
+  line-height: 155%;
   color: #fff;
   position: relative;
   display: -webkit-box;
@@ -15556,7 +15556,7 @@ html.modal__open {
 }
 .management__item p {
   font-family: "Futura PT";
-  font-size: 0.9375rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 110%;
   color: #868686;
