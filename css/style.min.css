@@ -13549,7 +13549,7 @@ h3 {
   bottom: 0;
 }
 
-.events::before, .management::before, .contact::before,
+.uzbekistan__location::before, .uzbekistan__info::before, .events::before, .information::before, .management::before, .faq::before, .contact::before,
 .contact__about::before, .useful__links::before, .opportunity::before {
   content: "";
   position: absolute;
@@ -13566,7 +13566,7 @@ h3 {
   z-index: -1;
 }
 
-.news::after, .opportunity::after {
+.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .opportunity::after {
   content: "";
   position: absolute;
   background-image: url("../images/deco-right.png");
@@ -15075,9 +15075,30 @@ html.modal__open {
   object-fit: contain;
 }
 
+.sub__organisations {
+  position: relative;
+  background-image: url("../images/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 100px 0;
+  color: #fff;
+  z-index: 0;
+}
+.sub__organisations h2 {
+  color: #fff;
+}
 .sub__organisations::before {
-  top: -40px;
-  z-index: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
 }
 .sub__organisations .row {
   -ms-flex-pack: distribute;
@@ -15407,6 +15428,13 @@ html.modal__open {
         FAQ
     **********************
 **********************/
+.faq {
+  z-index: 0;
+}
+.faq::before {
+  width: 250px;
+  height: 250px;
+}
 .faq h2 {
   display: none;
 }
@@ -15524,7 +15552,7 @@ html.modal__open {
   line-height: 120%;
   color: #222222;
   margin-top: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .management__item p {
   font-family: "Futura PT";
@@ -15544,6 +15572,9 @@ html.modal__open {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   width: 80%;
 }
 .management__content p {
@@ -15745,6 +15776,34 @@ html.modal__open {
        FEEDBACK
     **********************
 **********************/
+.feedback:not(.page) {
+  position: relative;
+  background-image: url("../images/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 100px 0;
+  color: #fff;
+  z-index: 0;
+}
+.feedback:not(.page) h2 {
+  color: #fff;
+}
+.feedback:not(.page)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.feedback::after {
+  top: 0;
+}
 .feedback h5 {
   font-family: "Futura PT";
   font-size: 1.25rem;
@@ -16427,6 +16486,9 @@ html.modal__open {
         GALLERY
     **********************
 **********************/
+.gallery::after {
+  top: 50px;
+}
 .gallery__photo-item, .gallery__video-item {
   position: relative;
   width: 100%;
@@ -16579,9 +16641,9 @@ html.modal__open {
 .news-child-content p {
   font-family: "Futura PT";
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 160%;
-  color: #868686;
+  color: #222222;
   margin: 10px 0;
   text-wrap: wrap;
 }
@@ -17008,6 +17070,8 @@ html.modal__open {
 .uzbekistan .col-lg-6 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .uzbekistan h4 {
   font-family: "Futura PT";
@@ -17085,6 +17149,10 @@ html.modal__open {
   padding: 0 15px;
   padding-top: 50px;
   padding-bottom: 66px;
+  z-index: 0;
+}
+.uzbekistan__symbol::after {
+  top: 100px;
 }
 .uzbekistan__symbol h3 {
   font-family: "Futura PT";
@@ -17139,6 +17207,16 @@ html.modal__open {
   color: #222222;
 }
 
+.uzbekistan__location {
+  z-index: 0;
+}
+
+.uzbekistan__holidays {
+  z-index: 0;
+}
+.uzbekistan__holidays::after {
+  top: 120px;
+}
 .uzbekistan__holidays-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17675,6 +17753,23 @@ html.modal__open {
   }
   .burger__navbar .burger__navbar-link {
     font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  .organisation__structure .tree_cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .tf-tree li li:before {
+    display: none;
+  }
+  .tf-tree .tf-nc:before {
+    display: none;
   }
 }
 @media (max-width: 992px) {
