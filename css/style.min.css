@@ -15801,6 +15801,9 @@ html.modal__open {
   height: 100%;
   opacity: 0.3;
 }
+.feedback:not(.page)::after {
+  display: none;
+}
 .feedback::after {
   top: 0;
 }
@@ -17755,6 +17758,22 @@ html.modal__open {
   .tf-tree .tf-nc:before {
     display: none;
   }
+  .organisation__structure .tree_top {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .organisation__structure .tree_top .tf-nc:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .recent__box {
     position: static;
     width: 100%;
@@ -17781,6 +17800,62 @@ html.modal__open {
     margin: 0;
     max-width: 100%;
     padding: 0;
+  }
+  .organisation__structure .tree_cover > li:last-child > .tree_third::before {
+    right: auto;
+    left: -2px;
+  }
+  .organisation__structure .tree_cover > li:last-child > ul a::before {
+    right: auto !important;
+    left: -10px !important;
+  }
+  .organisation__structure .tree_cover > li:last-child > a::after {
+    right: auto !important;
+    left: -10px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .organisation__structure .tree_third::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: calc(100% + 8.54em);
+    width: 1px;
+    background: #000;
+    left: -2px;
+    top: -173px;
+  }
+  .organisation__structure .tree_fourth::after {
+    border-left: 0.0625em solid #000;
+    content: "";
+    display: block;
+    height: calc(100% - 2.05rem);
+    left: -11px;
+    position: absolute;
+    width: 0.0625em;
+    top: -98px;
+  }
+  .organisation__structure .tree_top .tf-nc:first-child::after {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    left: -19px;
+    height: calc(100% + 0.7rem);
+  }
+  .organisation__structure .tf-nc.second::after {
+    left: -8px;
+    top: 50%;
+    height: 1.1rem;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .organisation__structure .tree_third li:first-child a::before {
+    left: -9px;
+    height: 15px;
   }
 }
 @media (max-width: 992px) {
