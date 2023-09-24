@@ -16958,6 +16958,7 @@ html.modal__open {
   -o-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
+  width: 200px;
 }
 .organisation__structure .tf-nc:hover {
   background: #0A3C55;
