@@ -16774,6 +16774,10 @@ html.modal__open {
   background: #fff;
   padding: 20px;
   overflow-x: scroll;
+  /*  padding-left: 27rem; on mobile */
+}
+.org_structure .tree_cover {
+  /* padding: 0 30rem; on mobile */
 }
 .org_structure .treee {
   display: -webkit-box;
@@ -16844,6 +16848,24 @@ html.modal__open {
   align-items: flex-start;
   gap: 40px;
   margin: 20px 0 0 0;
+  /* padding-right: 20rem; on mobile */
+}
+.org_structure .treee .tree_first_inner .child_second:last-child:has(> ul):before {
+  right: -16px;
+  left: auto;
+  height: calc(100% - 68px);
+  top: -11px;
+}
+.org_structure .treee .tree_first_inner .child_second:last-child .treee_second_inner {
+  padding-right: 0;
+  padding-left: 0 !important;
+}
+.org_structure .treee .tree_first_inner .child_second:last-child .child_third::before {
+  left: auto;
+  right: -15px;
+}
+.org_structure .treee .tree_first_inner .child_second:last-child::after {
+  left: 48.1%;
 }
 .org_structure .child_first {
   position: relative;
@@ -16899,7 +16921,7 @@ html.modal__open {
   border-left: 1px solid #000;
   top: 0;
   left: 0;
-  height: calc(100% - 5rem);
+  height: calc(100% - 79px);
 }
 .org_structure .child_second:first-child::after {
   left: 103%;
@@ -16940,7 +16962,7 @@ html.modal__open {
 .org_structure .child_third::before {
   content: "";
   position: absolute;
-  width: 1.9rem;
+  width: 2.9rem;
   height: 1px;
   display: block;
   background: #000;
@@ -16988,7 +17010,7 @@ html.modal__open {
   top: 0;
   background: #000;
   width: 1px;
-  height: calc(100% - 4.89rem);
+  height: calc(100% - 78px);
 }
 .org_structure .child_fourth a {
   position: relative;
@@ -16996,13 +17018,24 @@ html.modal__open {
 .org_structure .child_fourth a::before {
   content: "";
   position: absolute;
-  width: 1.2rem;
+  width: 20px;
   height: 1px;
   background: #000;
   left: -20px;
   top: 20px;
 }
 
+@media (max-width: 1085px) {
+  .information__inner {
+    padding-left: 27rem !important;
+  }
+  .tree_cover {
+    padding: 0 30rem !important;
+  }
+  .treee .tree_first_inner {
+    padding-right: 20rem !important;
+  }
+}
 /**********************
     **********************
        DEPARTMENT INFO
@@ -17568,6 +17601,11 @@ html.modal__open {
     gap: 20px;
   }
 }
+@media (max-width: 1320px) {
+  .navbar__inner-items #navbar-search {
+    left: -290px;
+  }
+}
 @media (max-width: 1275px) {
   .logo {
     display: none;
@@ -17823,100 +17861,6 @@ html.modal__open {
     max-width: 100%;
     padding: 0;
   }
-  /*
-
-   .organisation__structure .tree_cover {
-          display: flex;
-          flex-direction: column;
-      }
-
-      .tf-tree li li:before {
-          display: none;
-      }
-
-      .tf-tree .tf-nc:before {
-          display: none;
-      }
-
-      .organisation__structure .tree_top {
-          text-align: center;
-          display: flex;
-          gap: 20px;
-          position: relative;
-          flex-direction: column;
-      }
-
-      .organisation__structure .tree_top .tf-nc:first-child {
-          margin-left: 0;
-          margin-right: 0;
-      }
-
-
-
-
-      .organisation__structure .tree_cover>li:last-child>.tree_third::before {
-          right: auto;
-          left: -2px;
-      }
-
-      .organisation__structure .tree_cover>li:last-child>ul a::before {
-          right: auto !important;
-          left: -10px !important;
-      }
-
-      .organisation__structure .tree_cover>li:last-child>a::after {
-          right: auto !important;
-          left: -10px !important;
-          top: 50%;
-          -webkit-transform: translateY(-50%) rotate(90deg);
-          -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
-
-      }
-
-
-      .organisation__structure .tree_third::before {
-          content: "";
-          position: absolute;
-          display: block;
-          height: calc(100% + 8.54em);
-          width: 1px;
-          background: #000;
-          left: -2px;
-          top: -173px;
-      }
-
-
-      .organisation__structure .tree_fourth::after {
-          border-left: 0.0625em solid #000;
-          content: "";
-          display: block;
-          height: calc(100% + -2.05rem);
-          left: -11px;
-          position: absolute;
-          width: 0.0625em;
-          top: -98px;
-      }
-
-      .organisation__structure .tree_top .tf-nc:first-child::after {
-          top: 50%;
-          transform: translateY(-50%) rotate(90deg);
-          left: -19px;
-          height: calc(100% + 0.7rem);
-      }
-
-      .organisation__structure .tf-nc.second::after {
-          left: -8px;
-          top: 50%;
-          height: 1.1rem;
-          transform: translateY(-50%) rotate(90deg);
-      }
-
-      .organisation__structure .tree_third li:first-child a::before {
-          left: -9px;
-          height: 15px;
-      }
-  */
 }
 @media (max-width: 992px) {
   .header.sticky + .main {
@@ -18203,6 +18147,9 @@ html.modal__open {
   .navbar__interactions a:not(.logo) {
     max-width: 30px;
   }
+  .navbar__inner-items #navbar-search {
+    left: -229px;
+  }
 }
 @media (max-width: 360px) {
   h2 {
@@ -18236,5 +18183,11 @@ html.modal__open {
   }
   .navbar__interactions.mobile a {
     display: block !important;
+  }
+  .navbar__inner-items #navbar-search {
+    left: -187px;
+  }
+  .navbar__inner-items #navbar-search input {
+    width: 225px;
   }
 }
