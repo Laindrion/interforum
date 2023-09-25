@@ -16803,6 +16803,7 @@ html.modal__open {
   -o-transition: 0.4s all;
   transition: 0.4s all;
   line-height: 20px;
+  text-wrap: wrap !important;
 }
 .org_structure .treee a:hover {
   color: #fff;
