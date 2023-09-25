@@ -13884,11 +13884,11 @@ label textarea {
 }
 
 .logo {
-  max-width: 140px;
+  max-width: 180px;
 }
 
 .logo.logo-miit {
-  max-width: 300px;
+  max-width: 283px;
 }
 
 .navbar__interactions.mobile {
@@ -13946,7 +13946,7 @@ label textarea {
 }
 .navbar__top-item a {
   font-family: "Arsenal", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.175rem;
   font-weight: 700;
   color: #222222;
   position: relative;
@@ -13984,7 +13984,7 @@ label textarea {
 .navbar__top-item-lang {
   position: relative;
   font-family: "Arsenal", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.175rem;
   font-weight: 700;
   line-height: 120%;
   color: #222222;
@@ -16746,7 +16746,7 @@ html.modal__open {
     **********************
 **********************/
 .organisation__structure {
-  text-wrap: wrap;
+  text-wrap: wrap !important;
   text-align: center;
   /*
   .tf-tree {
@@ -16895,6 +16895,26 @@ html.modal__open {
   font-weight: normal;
   font-size: 1rem;
 }
+.organisation__structure .tree_third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+.organisation__structure .tree_fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
 .organisation__structure h2 {
   text-align: center;
   max-width: 100%;
@@ -16958,7 +16978,7 @@ html.modal__open {
   -o-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  width: 200px;
+  width: 180px;
 }
 .organisation__structure .tf-nc:hover {
   background: #0A3C55;
