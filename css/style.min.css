@@ -16933,7 +16933,7 @@ html.modal__open {
   content: "";
   position: absolute;
   height: 1px;
-  width: 120%;
+  width: 120.8%;
   background: #000;
   top: -11px;
   left: 50%;
