@@ -16808,6 +16808,8 @@ html.modal__open {
   transition: 0.4s all;
   line-height: 20px;
   text-wrap: wrap !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 .org_structure .treee a:hover {
   color: #fff;
