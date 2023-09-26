@@ -16933,11 +16933,7 @@ html.modal__open {
   content: "";
   position: absolute;
   height: 1px;
-<<<<<<< HEAD
   width: 120%;
-=======
-  width: 120.8%;
->>>>>>> d3d8ba9b84a01849cedbd6af3e254f422f2c0f3e
   background: #000;
   top: -11px;
   left: 50%;
@@ -17027,12 +17023,9 @@ html.modal__open {
   background: #000;
   left: -20px;
   top: 20px;
-<<<<<<< HEAD
 }
 .org_structure pre {
   overflow: inherit;
-=======
->>>>>>> d3d8ba9b84a01849cedbd6af3e254f422f2c0f3e
 }
 
 @media (max-width: 1085px) {
