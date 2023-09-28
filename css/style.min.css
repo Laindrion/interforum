@@ -13888,14 +13888,14 @@ label textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
-  transition: 0.4s all;
+  -webkit-transition: 0.9s all;
+  -o-transition: 0.9s all;
+  transition: 0.9s all;
 }
 .logo img {
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
-  transition: 0.4s all;
+  -webkit-transition: 0.9s all;
+  -o-transition: 0.9s all;
+  transition: 0.9s all;
 }
 
 .navbar .navbar__interactions .logo:hover img:first-child {
@@ -14246,6 +14246,7 @@ label textarea {
   -o-transition: 0.4s all;
   transition: 0.4s all;
   overflow: hidden;
+  top: 7vh;
 }
 .menu__list-item .menu__list-dropdown a {
   font-family: "Arsenal", sans-serif;
@@ -14376,7 +14377,7 @@ html.modal__open {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  top: 77px;
+  top: 65px;
   bottom: 0;
   background: #0A3C55;
   overflow-y: scroll;
