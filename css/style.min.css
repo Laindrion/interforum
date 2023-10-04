@@ -16837,6 +16837,7 @@ html.modal__open {
   overflow-wrap: break-word !important;
   word-wrap: break-word !important;
   word-break: break-all !important;
+  white-space: wrap !important;
 }
 .org_structure .treee a:hover {
   color: #fff;
