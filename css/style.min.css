@@ -17058,7 +17058,7 @@ html.modal__open {
 }
 
 @media (max-width: 1085px) {
-  .information__inner {
+  .org_structure .information__inner {
     padding-left: 27rem !important;
   }
   .tree_cover {
