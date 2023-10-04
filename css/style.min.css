@@ -16826,7 +16826,7 @@ html.modal__open {
   text-align: center;
   text-decoration: none;
   color: #000;
-  max-width: 180px;
+  width: 180px;
   border: 1px solid #000;
   padding: 10px 5px;
   background: #fff;
@@ -16835,6 +16835,8 @@ html.modal__open {
   transition: 0.4s all;
   line-height: 20px;
   text-wrap: wrap !important;
+  white-space: normal !important;
+  word-break: break-word !important;
 }
 .org_structure .treee a:hover {
   color: #fff;
