@@ -13550,7 +13550,7 @@ h3 {
 }
 
 .uzbekistan__location::before, .uzbekistan__info::before, .events::before, .information::before, .management::before, .faq::before, .contact::before,
-.contact__about::before, .useful__links::before, .opportunity::before {
+.contact__about::before, .useful__links::before, .sub__organisations::before, .opportunity::before {
   content: "";
   position: absolute;
   background-image: url("../images/deco-left.svg");
@@ -13566,7 +13566,7 @@ h3 {
   z-index: -1;
 }
 
-.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .opportunity::after {
+.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .sub__organisations::after, .opportunity::after {
   content: "";
   position: absolute;
   background-image: url("../images/deco-right.png");
@@ -15155,28 +15155,32 @@ html.modal__open {
 
 .sub__organisations {
   position: relative;
-  background-image: url("../images/bg-1.jpg");
+  /*  background-image: url('../images/bg-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top left; */
+  background: #FBFBFB;
   padding: 100px 0;
   color: #fff;
   z-index: 0;
+  /*   &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      opacity: .3;
+  } */
+}
+.sub__organisations::after {
+  bottom: 200px;
 }
 .sub__organisations h2 {
-  color: #fff;
-}
-.sub__organisations::before {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: #000;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
+  color: #222222;
 }
 .sub__organisations .row {
   -ms-flex-pack: distribute;
