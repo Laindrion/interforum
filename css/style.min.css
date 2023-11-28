@@ -13566,7 +13566,7 @@ h3 {
   z-index: -1;
 }
 
-.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .sub__organisations::after, .opportunity::after {
+.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .opportunity::after {
   content: "";
   position: absolute;
   background-image: url("../images/deco-right.png");
@@ -15840,7 +15840,7 @@ html.modal__open {
 }
 .information__inner p {
   font-family: "Futura PT";
-  font-size: 1.0625rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.625rem;
   color: #868686;
@@ -17093,7 +17093,7 @@ html.modal__open {
   content: "";
   position: absolute;
   height: 1px;
-  width: 120%;
+  width: 121%;
   background: #000;
   top: -11px;
   left: 50%;
