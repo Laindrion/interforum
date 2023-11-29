@@ -14901,6 +14901,8 @@ html.modal__open {
 **********************/
 .opportunity {
   position: relative;
+  background: #fff;
+  z-index: 0;
 }
 .opportunity::before {
   bottom: 21px;
@@ -15247,6 +15249,8 @@ html.modal__open {
 **********************/
 .news {
   text-wrap: wrap;
+  background: #fff;
+  z-index: 0;
 }
 .news::after {
   z-index: -1;
@@ -17375,6 +17379,7 @@ html.modal__open {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  gap: 30px;
 }
 .uzbekistan__info .region__list-item__info a {
   padding: 0;
