@@ -13549,7 +13549,7 @@ h3 {
   bottom: 0;
 }
 
-.uzbekistan__location::before, .uzbekistan__info::before, .events::before, .information::before, .management::before, .faq::before, .contact::before,
+.uzbekistan__holidays::before, .uzbekistan__location::before, .uzbekistan__symbol::before, .uzbekistan__info::before, .events::before, .information::before, .management::before, .faq::before, .contact::before,
 .contact__about::before, .useful__links::before, .sub__organisations::before, .opportunity::before {
   content: "";
   position: absolute;
@@ -17430,7 +17430,7 @@ html.modal__open {
   z-index: 0;
 }
 .uzbekistan__symbol::after {
-  top: 100px;
+  top: 60%;
 }
 .uzbekistan__symbol h3 {
   font-family: "Futura PT";
@@ -17494,6 +17494,9 @@ html.modal__open {
 }
 .uzbekistan__holidays::after {
   top: 120px;
+}
+.uzbekistan__holidays::before {
+  top: 50%;
 }
 .uzbekistan__holidays-wrapper {
   display: -webkit-box;
