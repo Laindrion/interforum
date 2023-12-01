@@ -14573,6 +14573,7 @@ html.modal__open {
 **********************/
 .hero {
   position: relative;
+  background: #fff;
 }
 .hero .hero__arrows {
   display: -webkit-box;
@@ -15671,7 +15672,7 @@ html.modal__open {
 .management__item p {
   font-family: "Futura PT";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 110%;
   color: #868686;
 }
