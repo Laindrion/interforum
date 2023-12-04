@@ -13550,7 +13550,7 @@ h3 {
 }
 
 .uzbekistan__holidays::before, .uzbekistan__location::before, .uzbekistan__symbol::before, .uzbekistan__info::before, .events::before, .information::before, .management::before, .faq::before, .contact::before,
-.contact__about::before, .useful__links::before, .opportunity::before {
+.contact__about::before, .news::before, .opportunity::before {
   content: "";
   position: absolute;
   background-image: url("../images/deco-left.svg");
@@ -13568,7 +13568,7 @@ h3 {
   animation: deco_left 15s ease-in-out infinite;
 }
 
-.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .news::after, .sub__organisations::after, .opportunity::after {
+.uzbekistan__holidays::after, .uzbekistan__symbol::after, .gallery::after, .feedback::after, .useful__links::after, .sub__organisations::after, .opportunity::after {
   content: "";
   position: absolute;
   background-image: url("../images/deco-right.png");
@@ -15272,8 +15272,8 @@ html.modal__open {
   transition-delay: 600ms;
 }
 
-.useful__links::before {
-  bottom: 30px;
+.useful__links::after {
+  top: 50%;
 }
 
 /**********************
