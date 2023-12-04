@@ -14964,6 +14964,8 @@ html.modal__open {
 }
 .opportunity__item img {
   border-radius: 20px;
+  -webkit-filter: brightness(1.05);
+  filter: brightness(1.05);
 }
 .opportunity__btn {
   margin-top: 20px;
