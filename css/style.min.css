@@ -15452,15 +15452,15 @@ html.modal__open {
   padding-bottom: 150px;
 }
 .useful__links-item {
-  min-height: 190px;
+  min-height: 160px;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .useful__links-item:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .useful__links-item img {
   width: 171px;
@@ -17492,6 +17492,7 @@ html.modal__open {
 
 .uzbekistan__holidays {
   z-index: 0;
+  text-align: center;
 }
 .uzbekistan__holidays::after {
   top: 120px;
@@ -17508,6 +17509,28 @@ html.modal__open {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 30px;
+}
+.uzbekistan__holidays-wrapper > .row {
+  row-gap: 50px;
+}
+.uzbekistan__holidays .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.uzbekistan__holidays-img {
+  /* border-radius: 50%; */
+  overflow: hidden;
+  border-radius: 50%;
+  height: 237px;
+  width: 237px;
+}
+.uzbekistan__holidays-img img {
+  width: 100%;
+  height: 100%;
 }
 .uzbekistan__holidays-item .row .col-lg-6 {
   display: -webkit-box;
