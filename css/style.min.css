@@ -15315,6 +15315,10 @@ html.modal__open {
   background: #fff;
   z-index: 0;
 }
+.news::before {
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
+}
 .news::after {
   z-index: -1;
 }
