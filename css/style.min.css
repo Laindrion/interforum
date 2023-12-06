@@ -16271,6 +16271,11 @@ html.modal__open {
   border-radius: 20px;
   position: relative;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .events__item h4 {
   font-family: "Futura PT";
