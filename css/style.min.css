@@ -15361,6 +15361,8 @@ html.modal__open {
   border-radius: 20px;
   position: relative;
   padding-bottom: 0;
+  -webkit-box-shadow: 4px 4px 8px -2px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px -2px rgba(34, 60, 80, 0.2);
 }
 .news__slider-item::after {
   bottom: 53px;
