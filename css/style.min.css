@@ -14122,7 +14122,7 @@ label textarea {
   transition: 0.3s all;
 }
 .navbar__top-item-lang__inner.active {
-  height: 4.625rem;
+  height: 4.325rem;
 }
 .navbar__top-item-lang__inner a {
   display: block;
@@ -15519,6 +15519,9 @@ html.modal__open {
 .useful__links {
   padding-bottom: 150px;
 }
+.useful__links .row {
+  row-gap: 25px;
+}
 .useful__links-item {
   min-height: 160px;
   -webkit-transition: 0.3s all;
@@ -15533,6 +15536,16 @@ html.modal__open {
 .useful__links-item img {
   width: 171px;
   aspect-ratio: 3/2;
+}
+.useful__links .col-lg-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /**********************
