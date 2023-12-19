@@ -1,456 +1,583 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-dom">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <style>
-        .treee {
-            display: flex;
-            width: 100%;
-            padding-left: 0 !important;
-        }
 
-        .treee a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            width: 180px;
-            border: 1px solid black;
-            padding: 10px 0;
-        }
+    <header class="header" id="header">
+        <div class="header__top">
 
-        .treee ul {
-            padding-left: 30px !important;
-        }
+            <nav class="navbar__top">
+                <div class="container">
+                    <div class="navbar__top-wrapper">
 
-        .treee ul,
-        .treee li {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .treee_top {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            width: 100%;
-        }
-
-        .treee .tree_first_inner {
-            display: flex;
-            align-items: flex-start;
-            gap: 40px;
-            margin: 20px 0 0 0;
-        }
-
-        .child_first {
-            position: relative;
-        }
-
-        .child_first:first-child {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .child_first:first-child a {
-            position: relative;
-        }
-
-        .child_first:first-child>a:after {
-            content: '';
-            position: absolute;
-            display: block;
-            left: 50%;
-            bottom: -10px;
-            transform: translateX(-50%);
-            height: 10px;
-            width: 1px;
-            background: black;
-        }
-
-
-        .child_first:first-child::before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: calc(74.8% - 18.9rem);
-            height: 1px;
-            right: -40px;
-            top: 3%;
-            background: black;
-        }
-
-        .child_second {
-            position: relative;
-        }
-
-        .child_second:has(> ul):before {
-            content: '';
-            position: absolute;
-            display: block;
-            border-left: 1px solid black;
-            top: 0;
-            left: 0;
-            height: calc(100% - 1.2rem);
-        }
-
-        .child_second:first-child::after {
-            left: 103%;
-        }
-
-        .child_second:last-child::after {
-            left: -17%;
-        }
-
-        .child_second::after {
-            content: '';
-            position: absolute;
-            height: 1px;
-            width: 120%;
-            background: black;
-            top: -11px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .child_second>a {
-            position: relative;
-        }
-
-        .child_second>a::before {}
-
-        .child_second>a::after {
-            content: '';
-            position: absolute;
-            height: 10px;
-            width: 1px;
-            background: black;
-            top: -11px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .child_third {
-            position: relative;
-        }
-
-        .child_third::before {
-            content: '';
-            position: absolute;
-            width: 1.9rem;
-            height: 1px;
-            display: block;
-            background: #000;
-            top: 20px;
-            transform: translateY(-50%);
-            left: -29px;
-        }
-
-        .treee_second_inner {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px !important;
-        }
-
-        .treee ul.treee_third_inner {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-top: 20px !important;
-            padding-left: 20px !important;
-            position: relative;
-        }
-
-        .treee_third_inner::before {
-            content: '';
-            position: absolute;
-            display: block;
-            left: 0;
-            top: 0;
-            background: black;
-            width: 1px;
-            height: calc(100% - 1.1rem);
-        }
-
-        .child_fourth {}
-
-        .child_fourth a {
-            position: relative;
-        }
-
-        .child_fourth a::before {
-            content: '';
-            position: absolute;
-            width: 1.2rem;
-            height: 1px;
-            background: black;
-            left: -20px;
-            top: 20px;
-        }
-    </style>
-    <div class="container">
-        <div class="tree_cover">
-            <ul class="treee">
-                <div class="treee_top">
-                    <li class="child_first">
-                        <a href="#">
-                            Parent
+                        <a class="logo logo-miit" href="index.html">
+                            <img src="images/logo-miit-ru.svg" alt="logo">
                         </a>
-                        <ul class="tree_first_inner">
-                            <li class="child_second">
-                                <a href="#">
-                                    Child
-                                </a>
-                                <ul class="treee_second_inner">
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
+
+                        <div class="navbar__top-item">
+                            <a class="navbar__top-suptitle" href="helpline.html">
+                                Телефон доверия:
+                            </a>
+                            <a class="navbar__top-item-phone" href="tel:998712385005">
+                                +998 (71) 238-50-05
+                            </a>
+                        </div>
+
+                        <div class="navbar__top-item">
+                            <span class="navbar__top-suptitle">
+                                Телефон министерства:
+                            </span>
+                            <a class="navbar__top-item-phone" href="tel:998712440143">
+                                +998 (71) 238-50-00
+                            </a>
+                        </div>
+
+
+                        <div class="navbar__top-item lang">
+                            <span class="navbar__top-suptitle">
+                                Язык:
+                            </span>
+                            <span class="navbar__top-item-lang" href="#">
+                                RU
+                                <span class="navbar__top-item-lang__inner" id="navbar-top-item-lang-inner">
+                                    <a href="#">
+                                        ENG
+                                    </a>
+                                    <a href="#">
+                                        UZB
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="navbar__interactions mobile">
+                            <a class="navbar__font-size" href="#">
+                                <img src="images/glasses-dark.svg" alt="">
+                                <ul>
+                                    <li id="fonts-plus">
+                                        A+
                                     </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
+                                    <li id="fonts-standart">
+                                        A
                                     </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
+                                    <li id="fonts-minus">
+                                        A-
                                     </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
+                                    <li id="color">
+                                        <img src="" alt="">
                                     </li>
                                 </ul>
-                            </li>
-
-                            <li class="child_second">
-                                <a href="#">
-                                    Child
-                                </a>
-                                <ul class="treee_second_inner">
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-
-                                        <ul class="treee_third_inner">
-                                            <li class="child_fourth">
-                                                <a href="#">
-                                                    Child Third
-                                                </a>
-                                            </li>
-
-                                            <li class="child_fourth">
-                                                <a href="#">
-                                                    Child Third
-                                                </a>
-                                            </li>
-
-                                            <li class="child_fourth">
-                                                <a href="#">
-                                                    Child Third
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="child_second">
-                                <a href="#">
-                                    Child
-                                </a>
-                                <ul class="treee_second_inner">
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="child_second">
-                                <a href="#">
-                                    Child
-                                </a>
-                                <ul class="treee_second_inner">
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                    <li class="child_third">
-                                        <a href="#">
-                                            Child Second
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="child_first">
-                        <a href="#">
-                            Parent
-                        </a>
-                    </li>
+                            </a>
+                            <a href="#">
+                                <img src="images/sound-dark.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </ul>
+            </nav>
+
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar__wrapper">
+                        <div class="navbar__interactions">
+                            <a class="logo" href="index.html">
+                                <img src="images/logo.svg" alt="logo">
+                                <img src="images/logo-text.svg" alt="logo">
+                            </a>
+                            <a class="navbar__font-size" href="#">
+                                <img src="images/glasses.svg" alt="">
+
+
+                                <ul>
+                                    <li id="fonts-plus">
+                                        A+
+                                    </li>
+                                    <li id="fonts-standart">
+                                        A
+                                    </li>
+                                    <li id="fonts-minus">
+                                        A-
+                                    </li>
+                                    <li id="color">
+                                        <img src="" alt="">
+                                    </li>
+                                </ul>
+                            </a>
+                            <a href="#">
+                                <img src="images/sound.svg" alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="navbar__inner">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+
+                                    <ul class="menu__list-dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Общая информция
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Организационная Структура
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Руководство
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                География
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                FAQ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Контакты
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Сотрудничество
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для СМИ
+                                    </a>
+
+                                    <ul class="menu__list-dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Пресс-Мероприятия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Правила аккредитации
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Политика Упоминаний
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Об Узбекистане
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="navbar__inner-items">
+                                <div id="navbar-search">
+                                    <input type="text" placeholder="Поиск...">
+                                    <button id="search">
+                                        <img src="images/search-header.svg" alt="">
+                                    </button>
+                                    <button id="close-search">
+                                        <img src="images/close-header.svg" alt="">
+                                    </button>
+                                </div>
+                                <a class="navbar__inner-item" id="header-search" href="#">
+                                    <img src="images/search.svg" alt="">
+                                </a>
+                                <a class="navbar__inner-item" href="#" id="burger-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
         </div>
-    </div>
+
+        <nav class="burger__navbar">
+            <div class="container">
+                <div class="burger__navbar-wrapper">
+                    <ul>
+                        <li>
+                            <a class="burger__navbar-link tab-link" href="#">
+                                О нас
+                            </a>
+                            <ul class="tab-content">
+                                <li>
+                                    <a href="#">
+                                        Общая информация
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Организационная Структура
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Руководство
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        География
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link tab-link" href="#">
+                                Мероприятия
+                            </a>
+                            <ul class="tab-content">
+                                <li>
+                                    <a href="#">
+                                        Общая информация
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Организационная Структура
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Руководство
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        География
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link tab-link" href="#">
+                                Сотрудничество
+                            </a>
+                            <ul class="tab-content">
+                                <li>
+                                    <a href="#">
+                                        Общая информация
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Организационная Структура
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Руководство
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        География
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Для СМИ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Галерея
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="burger__navbar-link" href="#">
+                                Открытые данные
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="burger-menu-close">
+                    <img src="images/close.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="main">
+    <section class="section__header">
+        <div class="container">
+            <div class="section__header-inner">
+                <p class="section__text">
+                    Главная/Сотрудничество/ПРАВИЛА АККРЕДИТАЦИИ
+                </p>
+                <h2 class="section__title">
+                    ГАЛЕРЕЯ
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+
+                <div class="tab-links">
+                    <a class="tab-link active" href="#">
+                        Фотогалерея
+                    </a>
+                    <a class="tab-link" href="#">
+                        Видеогалерея
+                    </a>
+                </div>
+
+                <div class="tab-content active">
+                    <div class="row gallery__inner gallery__photo">
+                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
+                            <div class="gallery__photo-item">
+                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
+
+                                <span class="date">
+                                    <span>15-16</span>июля
+                                </span>
+                            </div>
+                        </a>
+                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
+                            <div class="gallery__photo-item">
+                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
+
+                                <span class="date">
+                                    <span>15-16</span>июля
+                                </span>
+                            </div>
+                        </a>
+                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
+                            <div class="gallery__photo-item">
+                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
+
+                                <span class="date">
+                                    <span>15-16</span>июля
+                                </span>
+                            </div>
+                        </a>
+                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
+                            <div class="gallery__photo-item">
+                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
+
+                                <span class="date">
+                                    <span>15-16</span>июля
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="row gallery__inner gallery__video">
+                        <a class="col-lg-4 popup-video" href="https://www.youtube.com/watch?v=RFL6vKtIWQM">
+                            <div class="gallery__video-item">
+                                <div class="play"></div>
+
+                                <span class="date">
+                                    <span>17</span>May
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="col-lg-4 popup-video" href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">
+                            <div class="gallery__video-item">
+                                <div class="play"></div>
+
+                                <span class="date">
+                                    <span>31</span>October
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+
+            <div class="footer__inner">
+                <a class="footer__logo" href="#">
+                    <img src="images/logo.png" alt="footer logo">
+                </a>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#">
+                            О нас
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Аналитика
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Мероприятия
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Сотрудничество
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#">
+                            Для СМИ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Комплекс услуг
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__inner socials">
+                <p>
+                    Соц.сети:
+                </p>
+                <div class="social__links">
+                    <a href="#">
+                        <img src="images/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/telegram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/youtube.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
