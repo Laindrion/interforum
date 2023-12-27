@@ -16842,6 +16842,10 @@ html.modal__open {
   transform: translate(-50%, -50%);
 }
 
+.mfp-bg.mfp-img-mobile.mfp-ready {
+  position: fixed !important;
+}
+
 /**********************
     **********************
        NEWS POST
