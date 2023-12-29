@@ -17790,7 +17790,7 @@ html.modal__open {
   /* overflow: visible; */
 }
 .uzbekistan__about-accardion.active p {
-  grid-template-rows: 290px 1fr;
+  grid-template-rows: 100px 1fr;
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
