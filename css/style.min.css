@@ -15921,10 +15921,11 @@ html.modal__open {
   max-width: 100%;
   text-align: center;
 }
-.information__inner h2:first-child {
+.information__inner h2:has(> img) {
   float: left;
+  margin-bottom: 0;
 }
-.information__inner h2:first-child img {
+.information__inner h2:has(> img) img {
   width: 15rem;
   height: 15rem;
   margin-right: 30px;
