@@ -15921,6 +15921,18 @@ html.modal__open {
   max-width: 100%;
   text-align: center;
 }
+.information__inner h2:first-child {
+  float: left;
+}
+.information__inner h2:first-child img {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 30px;
+}
+.information__inner h2 strong {
+  display: block;
+  text-align: left;
+}
 .information__inner p {
   font-family: "Futura PT";
   font-size: 1.1rem;
