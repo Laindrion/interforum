@@ -15482,6 +15482,7 @@ html.modal__open {
   background: #FBFBFB;
   border-radius: 20px;
   padding: 28px 10px 42px 27px;
+  height: 100%;
 }
 .contact__item h3,
 .contact__about__item h3 {
@@ -15550,8 +15551,23 @@ html.modal__open {
         ABOUT
     **********************
 **********************/
+.about {
+  background: #fff;
+}
 .about h2 {
   margin-bottom: 22px;
+}
+.about .col-lg-6.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .about .col-lg-6 {
   display: -webkit-box;
@@ -15584,6 +15600,9 @@ html.modal__open {
         COMPETITION
     **********************
 **********************/
+.competition {
+  background: #FBFBFB;
+}
 .competition__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15597,10 +15616,15 @@ html.modal__open {
   align-items: center;
   gap: 40px;
   padding: 25px 30px;
-  background: #FBFBFB;
+  background: #fff;
   min-height: 408px;
   border-radius: 20px;
   text-align: center;
+  font-family: "Futura PT";
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: #868686;
 }
 .competition__item img {
   width: 127px;
@@ -15608,14 +15632,6 @@ html.modal__open {
   -o-object-fit: contain;
   object-fit: contain;
 }
-.competition__item p {
-  font-family: "Futura PT";
-  font-size: 1.0625rem;
-  font-weight: 300;
-  line-height: 1.625rem;
-  color: #868686;
-}
-
 /**********************
     **********************
         FAQ
@@ -17325,7 +17341,7 @@ html.modal__open {
 }
 
 @media (max-width: 1085px) {
-  .information__inner {
+  .ql-syntax {
     padding-left: 27rem !important;
   }
   .tree_cover {
