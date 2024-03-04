@@ -15647,6 +15647,9 @@ html.modal__open {
 .faq h2 {
   display: none;
 }
+.faq .col-12:first-child {
+  display: none;
+}
 
 /**********************
     **********************
