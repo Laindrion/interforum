@@ -17655,6 +17655,8 @@ html.modal__open {
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
+  fill: #EAEAEA;
+  fill-opacity: 1;
 }
 .region__map path:hover {
   fill: #fff;
