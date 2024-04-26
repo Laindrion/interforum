@@ -17085,7 +17085,7 @@ html.modal__open {
 .org_structure .information__inner {
   background: #fff;
   padding: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   /*  padding-left: 27rem; on mobile */
 }
 .org_structure .tree_cover {
@@ -17344,14 +17344,14 @@ html.modal__open {
 }
 
 @media (max-width: 1085px) {
-  .ql-syntax {
-    padding-left: 27rem !important;
-  }
+  /*    .ql-syntax {
+         padding-left: 27rem !important;
+     } */
   .tree_cover {
-    padding: 0 30rem !important;
+    padding: 0 3rem 0 75rem !important;
   }
   .treee .tree_first_inner {
-    padding-right: 20rem !important;
+    /*  padding-right: 20rem !important; */
   }
 }
 /**********************
