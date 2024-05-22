@@ -17154,18 +17154,14 @@ html.modal__open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  width: 100%;
+  /* gap: 40px; */
+  /* flex-direction: row-reverse; */
+  /* width: 100%; */
+  padding-right: 12rem;
 }
 .org_structure .treee .tree_first_inner {
   display: -webkit-box;
@@ -17230,14 +17226,14 @@ html.modal__open {
   content: "";
   position: absolute;
   display: block;
-  width: calc(74.8% - 26.9rem);
+  width: calc(70% - 22rem);
   height: 1px;
-  left: 9rem;
+  right: 13rem;
   top: 3%;
   background: #000;
 }
 .org_structure .child_first:last-child {
-  margin-right: -21rem;
+  margin-left: -21rem;
 }
 .org_structure .child_second {
   position: relative;
@@ -17361,7 +17357,7 @@ html.modal__open {
       padding-left: 27rem !important;
   } */
   .org_structure .tree_cover {
-    padding: 0 3rem 0 75rem;
+    padding: 0 3rem 0 0;
   }
   .treee .tree_first_inner {
     /*  padding-right: 20rem !important; */
