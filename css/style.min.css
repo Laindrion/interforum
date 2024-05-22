@@ -17360,11 +17360,15 @@ html.modal__open {
   /*    .ql-syntax {
       padding-left: 27rem !important;
   } */
-  .tree_cover {
-    padding: 0 3rem 0 75rem !important;
+  .org_structure .tree_cover {
+    padding: 0 3rem 0 75rem;
   }
   .treee .tree_first_inner {
     /*  padding-right: 20rem !important; */
+  }
+  .org_structure .tree_cover p {
+    width: 23rem;
+    padding-right: 40px;
   }
 }
 /**********************
