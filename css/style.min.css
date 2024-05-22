@@ -17356,6 +17356,9 @@ html.modal__open {
   /*    .ql-syntax {
       padding-left: 27rem !important;
   } */
+  .org_structure .treee_top {
+    padding-left: 13rem;
+  }
   .org_structure .tree_cover {
     padding: 0 3rem 0 0;
   }
@@ -17365,6 +17368,7 @@ html.modal__open {
   .org_structure .tree_cover p {
     width: 23rem;
     padding-right: 40px;
+    margin-left: 0;
   }
 }
 /**********************
