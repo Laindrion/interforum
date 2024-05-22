@@ -17165,6 +17165,7 @@ html.modal__open {
   /* flex-direction: row-reverse; */
   /* width: 100%; */
   padding-right: 12rem;
+  width: 100%;
 }
 .org_structure .treee .tree_first_inner {
   display: -webkit-box;
@@ -17359,9 +17360,6 @@ html.modal__open {
   /*    .ql-syntax {
       padding-left: 27rem !important;
   } */
-  .org_structure .treee_top {
-    padding-left: 50rem;
-  }
   .org_structure .tree_cover {
     padding: 0 3rem 0 0;
   }
