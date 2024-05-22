@@ -17102,6 +17102,7 @@ html.modal__open {
   text-align: center;
   line-height: 20px;
   margin-bottom: 2rem;
+  text-wrap: wrap;
 }
 .org_structure .treee {
   display: -webkit-box;
