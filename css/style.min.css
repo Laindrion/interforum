@@ -13958,6 +13958,13 @@ label textarea {
   transition: 0.9s all;
 }
 
+.logo__member img {
+  width: 2.4rem;
+  height: 3.1rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .navbar .navbar__interactions .logo:hover img:first-child {
   -webkit-transform: rotate(360deg) !important;
   -ms-transform: rotate(360deg) !important;
@@ -17165,6 +17172,8 @@ html.modal__open {
   /* flex-direction: row-reverse; */
   /* width: 100%; */
   padding-right: 12rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   width: 100%;
 }
 .org_structure .treee .tree_first_inner {
@@ -17417,6 +17426,9 @@ html.modal__open {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 150px;
+}
+.footer__logo-member {
+  width: 3rem;
 }
 .footer__list {
   display: -webkit-box;
