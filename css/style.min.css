@@ -16004,6 +16004,19 @@ html.modal__open {
   margin: 0 auto;
 }
 
+.news-child-title h2 {
+  font-family: "Futura PT";
+  font-size: 2.375rem;
+  font-weight: 400;
+  line-height: 2.175rem;
+  color: #222222;
+  max-width: 520px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: math-auto;
+}
+
 /**********************
     **********************
        FEEDBACK
@@ -17974,67 +17987,6 @@ html.modal__open {
   transform: translateY(-50%) rotate(90deg);
 }
 
-/* Uzbekistan Symbol */
-/* .uzbekistan__symbol {
-    padding: 0 15px;
-    padding-top: 50px;
-    padding-bottom: 66px;
-
-
-    @extend %deco_right;
-    @extend %deco_left;
-
-
-    z-index: 0;
-
-    &::after {
-        top: 60%;
-    }
-
-    h3 {
-        @include fontFt(19px, 700, 130%, $title);
-    }
-
-    p {
-        @include fontFt(17px, 400, 130%, $text);
-
-        a {
-            text-decoration: underline;
-        }
-
-        img {
-            mix-blend-mode: darken;
-        }
-    }
-
-    #speechArea {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    h4 {
-        margin-top: 40px;
-    }
-
-    p.title {
-        @include fontAs(32px, 700, 120%, $title);
-        text-align: center;
-        width: 100%;
-
-        span {
-            color: $title;
-        }
-
-        strong {
-            @include fontFt(19px, 700, 130%, $title);
-        }
-    }
-} */
-/* .uzbekistan__location {
-    z-index: 0;
-    @extend %deco_left;
-} */
 .uzbekistan__holidays {
   z-index: 0;
   text-align: center;
