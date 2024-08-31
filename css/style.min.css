@@ -15052,6 +15052,9 @@ html.modal__open {
   -webkit-filter: brightness(1.05);
   filter: brightness(1.05);
 }
+.opportunity__item video {
+  width: 100%;
+}
 .opportunity__btn {
   margin-top: 20px;
 }
