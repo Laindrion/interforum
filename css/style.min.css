@@ -17160,6 +17160,10 @@ html.modal__open {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   padding-left: 0 !important;
 }
@@ -17188,6 +17192,8 @@ html.modal__open {
   text-wrap: wrap !important;
   white-space: normal !important;
   word-break: break-word !important;
+  position: relative;
+  z-index: 1000;
 }
 .org_structure .treee a:hover {
   color: #fff;
@@ -17207,13 +17213,13 @@ html.modal__open {
   display: -ms-flexbox;
   display: flex;
   /* justify-content: space-evenly; */
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  /* gap: 40px; */
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  gap: 40px;
   /* flex-direction: row-reverse; */
   /* width: 100%; */
-  padding-right: 12rem;
+  padding-right: 2rem;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
@@ -17286,9 +17292,6 @@ html.modal__open {
   right: 13rem;
   top: 3%;
   background: #000;
-}
-.org_structure .child_first:last-child {
-  margin-left: -21rem;
 }
 .org_structure .child_second {
   position: relative;
