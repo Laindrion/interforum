@@ -16639,6 +16639,9 @@ label textarea {
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
+.gallery .popup-video {
+  width: 100%;
+}
 .gallery__video-item {
   position: relative;
   width: 100%;
