@@ -526,7 +526,12 @@
                     </a>
                 </div>
                 <div class="hero__image hidden">
-                    <img src="images/main-logo.svg" alt="logo">
+                    <!--   <img src="images/main-logo.svg" alt="logo"> -->
+
+                    <video autoplay muted inline style="width: 200px; height: 100%;">
+                        <source src="{{ asset('themes/images/logo.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('themes/images/logo-reveal.mov') }}">
+                    </video>
                 </div>
                 <div class="hero__about hidden">
                     <p>
