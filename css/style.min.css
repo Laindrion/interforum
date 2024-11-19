@@ -14957,7 +14957,7 @@ label textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  row-gap: 1.25rem;
+  row-gap: 2.05rem;
 }
 .links__item {
   display: -webkit-box;
@@ -14996,6 +14996,12 @@ label textarea {
   -o-transition: transform 0.4s, background 0.4s;
   transition: transform 0.4s, background 0.4s;
   transition: transform 0.4s, background 0.4s, -webkit-transform 0.4s;
+}
+.links__item-cover {
+  text-align: center;
+}
+.links__item-cover p {
+  margin-top: 1.25rem;
 }
 
 /**********************
