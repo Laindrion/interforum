@@ -1,682 +1,509 @@
 <!DOCTYPE html>
-<html lang="en" id="html-dom">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <header class="header secondary">
+        <div class="container">
+            <nav class="menu">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.svg" alt="logo image">
+                </a>
+                <ul class="menu__list">
+                    <a class="close" href="#">
 
-    <header class="header" id="header">
-        <div class="header__top">
-
-            <nav class="navbar__top">
-                <div class="container">
-                    <div class="navbar__top-wrapper">
-
-                        <a class="logo logo-miit" href="index.html">
-                            <img src="images/logo-miit-ru.svg" alt="logo">
+                    </a>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">
+                            О нас
                         </a>
 
-                        <div class="navbar__top-item">
-                            <a class="navbar__top-suptitle" href="helpline.html">
-                                Телефон доверия:
-                            </a>
-                            <a class="navbar__top-item-phone" href="tel:998712385005">
-                                +998 (71) 238-50-05
-                            </a>
-                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Общая информация
+                                </a>
+                            </li>
+                            <li>
+                                <a href="organisation_structure.html">
+                                    Организационная Структура
+                                </a>
+                            </li>
+                            <li>
+                                <a href="management.html">
+                                    Руководство
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="about_uzbekistan.html" class="menu__list-link">
+                            Об Узбекистане
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">
+                            Для СМИ
+                        </a>
 
-                        <div class="navbar__top-item">
-                            <span class="navbar__top-suptitle">
-                                Телефон министерства:
-                            </span>
-                            <a class="navbar__top-item-phone" href="tel:998712440143">
-                                +998 (71) 238-50-00
-                            </a>
-                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Правила аккредитации
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Политика Упоминаний
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="gallery.html" class="menu__list-link">
+                            Галерея
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="news.html" class="menu__list-link">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
 
-
-                        <div class="navbar__top-item lang">
-                            <span class="navbar__top-suptitle">
-                                Язык:
-                            </span>
-                            <span class="navbar__top-item-lang" href="#">
+                <div class="menu__list-inner">
+                    <ul class="lan">
+                        <li>
+                            <a class="lan__link" href="#">
                                 RU
-                                <span class="navbar__top-item-lang__inner" id="navbar-top-item-lang-inner">
+                            </a>
+
+                            <ul class="lan__inner">
+                                <li>
                                     <a href="#">
                                         ENG
                                     </a>
+                                </li>
+                                <li>
                                     <a href="#">
                                         UZB
                                     </a>
-                                </span>
-                            </span>
-                        </div>
-
-                        <div class="navbar__interactions mobile">
-                            <a class="navbar__font-size" href="#">
-                                <img src="images/glasses-dark.svg" alt="">
-                                <ul>
-                                    <li id="fonts-plus">
-                                        A+
-                                    </li>
-                                    <li id="fonts-standart">
-                                        A
-                                    </li>
-                                    <li id="fonts-minus">
-                                        A-
-                                    </li>
-                                    <li id="color">
-                                        <img src="" alt="">
-                                    </li>
-                                </ul>
-                            </a>
-                            <a href="#">
-                                <img src="images/sound-dark.svg" alt="">
-                            </a>
-                        </div>
-
-                        <a class="logo__member" href="#">
-                            <img src="images/ICCA_Member_Colour_A.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </nav>
-
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar__wrapper">
-                        <div class="navbar__interactions">
-                            <a class="logo" href="index.html">
-                                <img src="images/logo-interforum.png" alt="logo">
-                                <img src="images/logo-text.svg" alt="logo">
-                            </a>
-                            <a class="navbar__font-size" href="#">
-                                <img src="images/glasses.svg" alt="">
-
-
-                                <ul>
-                                    <li id="fonts-plus">
-                                        A+
-                                    </li>
-                                    <li id="fonts-standart">
-                                        A
-                                    </li>
-                                    <li id="fonts-minus">
-                                        A-
-                                    </li>
-                                    <li id="color">
-                                        <img src="" alt="">
-                                    </li>
-                                </ul>
-                            </a>
-                            <a href="#">
-                                <img src="images/sound.svg" alt="">
-                            </a>
-                        </div>
-
-
-                        <div class="navbar__inner">
-                            <ul class="menu__list">
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        О нас
-                                    </a>
-
-                                    <ul class="menu__list-dropdown">
-                                        <li>
-                                            <a href="#">
-                                                Общая информция
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Организационная Структура
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Руководство
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                География
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                FAQ
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Контакты
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        Сотрудничество
-                                    </a>
-                                </li>
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        Для СМИ
-                                    </a>
-
-                                    <ul class="menu__list-dropdown">
-                                        <li>
-                                            <a href="#">
-                                                Пресс-Мероприятия
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Правила аккредитации
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Политика Упоминаний
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        Галерея
-                                    </a>
-                                </li>
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        Новости
-                                    </a>
-                                </li>
-                                <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
-                                        Об Узбекистане
-                                    </a>
                                 </li>
                             </ul>
-
-                            <div class="navbar__inner-items">
-                                <div id="navbar-search">
-                                    <input type="text" placeholder="Поиск...">
-                                    <button id="search">
-                                        <img src="images/search-header.svg" alt="">
-                                    </button>
-                                    <button id="close-search">
-                                        <img src="images/close-header.svg" alt="">
-                                    </button>
-                                </div>
-                                <a class="navbar__inner-item" id="header-search" href="#">
-                                    <img src="images/search.svg" alt="">
-                                </a>
-                                <a class="navbar__inner-item" href="#" id="burger-menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-
-        <nav class="burger__navbar">
-            <div class="container">
-                <div class="burger__navbar-wrapper">
-                    <ul>
-                        <li>
-                            <a class="burger__navbar-link tab-link" href="#">
-                                О нас
-                            </a>
-                            <ul class="tab-content">
-                                <li>
-                                    <a href="#">
-                                        Общая информация
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Организационная Структура
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Руководство
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        География
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        FAQ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a class="burger__navbar-link tab-link" href="#">
-                                Мероприятия
-                            </a>
-                            <ul class="tab-content">
-                                <li>
-                                    <a href="#">
-                                        Общая информация
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Организационная Структура
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Руководство
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        География
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        FAQ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="burger__navbar-link tab-link" href="#">
-                                Сотрудничество
-                            </a>
-                            <ul class="tab-content">
-                                <li>
-                                    <a href="#">
-                                        Общая информация
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Организационная Структура
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Руководство
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        География
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        FAQ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="burger__navbar-link" href="#">
-                                Для СМИ
-                            </a>
-                        </li>
-                        <li>
-                            <a class="burger__navbar-link" href="#">
-                                Галерея
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="burger__navbar-link" href="#">
-                                Новости
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="burger__navbar-link" href="#">
-                                Открытые данные
-                            </a>
                         </li>
                     </ul>
-                </div>
-                <div id="burger-menu-close">
-                    <img src="images/close.svg" alt="">
-                </div>
-            </div>
-        </nav>
-    </header>
 
+                    <button class="burger__btn" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 <main class="main">
     <section class="section__header">
         <div class="container">
-            <div class="section__header-inner">
-                <p class="section__text">
-                    Главная/Сотрудничество/ПРАВИЛА АККРЕДИТАЦИИ
-                </p>
-                <h2 class="section__title">
-                    ГАЛЕРЕЯ
-                </h2>
-            </div>
+            <p class="section__header-text">
+                Главная/Галерея
+            </p>
+            <h2 class="section__header-title">
+                Галерея
+            </h2>
         </div>
     </section>
     <section class="gallery">
         <div class="container">
-            <div class="row">
+            <div class="tab-links">
+                <a class="tab-link active" href="#">
+                    Фотогалерея </a>
+                <a class="tab-link" href="#">
+                    Видеогалерея </a>
+            </div>
+            <div class="gallery__wrapper">
 
-                <div class="tab-links">
-                    <a class="tab-link active" href="#">
-                        Фотогалерея
+                <div class="gallery__inner left">
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-6.png" alt="Gallery">
                     </a>
-                    <a class="tab-link" href="#">
-                        Видеогалерея
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-5.jpg" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-1.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-2.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-3.png" alt="Gallery">
                     </a>
                 </div>
 
-                <div class="tab-content active">
-                    <div class="row gallery__inner gallery__photo">
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                        <a class="col-lg-4" href="images/accrdetitation-rules-photo.jpg">
-                            <div class="gallery__photo-item">
-                                <img src="images/accrdetitation-rules-photo.jpg" alt="">
-
-                                <span class="date">
-                                    <span>15-16</span>июля
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                <div class="gallery__inner right">
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-2.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-3.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-4.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-6.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-5.jpg" alt="Gallery">
+                    </a>
                 </div>
 
-                <div class="tab-content">
-                    <div class="row gallery__inner gallery__video">
-                        <a class="col-lg-4 popup-video" href="https://www.youtube.com/watch?v=RFL6vKtIWQM">
-                            <div class="gallery__video-item">
-                                <div class="play"></div>
-
-                                <span class="date">
-                                    <span>17</span>May
-                                </span>
-                            </div>
-                        </a>
-
-                        <a class="col-lg-4 popup-video" href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">
-                            <div class="gallery__video-item">
-                                <div class="play"></div>
-
-                                <span class="date">
-                                    <span>31</span>October
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                <div class="gallery__inner left">
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-1.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-2.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-3.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-4.png" alt="Gallery">
+                    </a>
+                    <a href="#" class="gallery__item">
+                        <img src="images/news-3.png" alt="Gallery">
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 </main>
+
+
 <footer class="footer">
+
+
     <div class="container">
+
+
         <div class="footer__wrapper">
 
-            <div class="footer__inner">
-                <a class="footer__logo" href="#">
-                    <img src="images/logo.png" alt="footer logo">
+
+
+
+
+            <div class="footer__message">
+
+
+                <h2>
+
+
+                    СВЯЖИТЕСЬ С НАМИ
+
+
+                </h2>
+
+
+                <a href="contacts.html">
+
+
+                    Связаться
+
+
                 </a>
 
+
+            </div>
+
+
+
+
+
+            <div class="footer__inner">
+
+
                 <ul class="footer__list">
-                    <li>
-                        <a href="#">
-                            О нас
-                        </a>
-                    </li>
+
+
+                    <h4>
+
+
+                        Компания
+
+
+                    </h4>
+
 
                     <li>
+
+
                         <a href="#">
-                            Аналитика
+
+
+                            Общая информация
+
+
                         </a>
+
+
                     </li>
 
-                    <li>
-                        <a href="#">
-                            Мероприятия
-                        </a>
-                    </li>
 
                     <li>
+
+
                         <a href="#">
-                            Сотрудничество
+
+
+                            Организационная структура
+
+
                         </a>
+
+
                     </li>
+
+
+                    <li>
+
+
+                        <a href="#">
+
+
+                            Руководство
+
+
+                        </a>
+
+
+                    </li>
+
+
+                    <li>
+
+
+                        <a href="#">
+
+
+                            FAQ
+
+
+                        </a>
+
+
+                    </li>
+
+
                 </ul>
 
+
+
+
+
                 <ul class="footer__list">
-                    <li>
-                        <a href="#">
-                            Для СМИ
-                        </a>
-                    </li>
+
+
+                    <h4>
+
+
+                        Ресурсы
+
+
+                    </h4>
+
+
+
+
 
                     <li>
-                        <a href="#">
-                            Комплекс услуг
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="#">
+
+                        <a href="gallery.html">
+
+
                             Галерея
+
+
                         </a>
+
+
                     </li>
+
 
                     <li>
+
+
                         <a href="#">
+
+
                             Новости
+
+
                         </a>
+
+
                     </li>
+
+
+
+
+
+                    <li>
+
+
+                        <a href="#">
+
+
+                            Об узбекистане
+
+
+                        </a>
+
+
+                    </li>
+
+
+                    <li>
+
+
+                        <a href="#">
+
+
+                            Для СМИ
+
+
+                        </a>
+
+
+                    </li>
+
+
                 </ul>
-            </div>
 
-            <a class="footer__logo-member" href="#">
-                <img src="images/ICCA_Member_Colour_A.png" alt="">
-            </a>
 
-            <div class="footer__inner socials">
-                <p>
-                    Соц.сети:
-                </p>
-                <div class="social__links">
-                    <a href="#">
-                        <img src="images/facebook.svg" alt="">
+
+
+
+                <div class="footer__info">
+
+
+                    <a href="mailto:info@interforum.uz">
+
+
+                        <span>
+
+
+                            Электронная почта
+
+
+                        </span>
+
+
+                        info@interforum.uz
+
+
                     </a>
-                    <a href="#">
-                        <img src="images/telegram.svg" alt="">
+
+
+                    <a href="tel:998712385767">
+
+
+                        <span>
+
+
+                            Номер телефона
+
+
+                        </span>
+
+
+                        +998 71 238 57 67
+
+
                     </a>
-                    <a href="#">
-                        <img src="images/instagram.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/youtube.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/linkedin.svg" alt="">
-                    </a>
+
+
                 </div>
+
+
             </div>
+
+
+
+
+
+            <div class="footer__copyright">
+
+
+                <p>
+
+
+                    Copyright © 2024 - InterForum.
+
+
+                </p>
+
+
+
+
+
+                <p>
+
+
+                    Политика конфиденциальности
+
+
+                </p>
+
+
+            </div>
+
+
+
+
+
         </div>
+
+
+    </div>
+
+
 </footer>
 
+
+
+
+
+<script src="js/tween.js"></script>
+
+
 <script src="js/main.min.js"></script>
-<script src="js/script.js"></script>
+
+
 </body>
+
+
+
+
 
 </html>
