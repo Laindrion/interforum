@@ -14319,7 +14319,7 @@ label textarea {
 .about {
   padding-top: 4.8125rem;
   padding-bottom: 5rem;
-  background-image: url("../images/bg-web-circle-image.png");
+  background-image: url("../images/bg.jpg");
   background-size: contain;
   background-position: top left;
   position: relative;
@@ -16608,9 +16608,9 @@ label textarea {
   mask-position: top center;
   -webkit-mask-image: url("../images/oval.svg");
   mask-image: url("../images/oval.svg");
-  -webkit-mask-position: left top;
-  mask-position: left top;
-  min-height: 8.625rem;
+  -webkit-mask-position: center;
+  mask-position: center;
+  min-height: 9.725rem;
 }
 .events .most__recent {
   height: 100%;
