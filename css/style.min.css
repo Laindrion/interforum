@@ -14319,7 +14319,7 @@ label textarea {
 .about {
   padding-top: 4.8125rem;
   padding-bottom: 5rem;
-  background-image: url("../images/bg.jpg");
+  /* background-image: url('../images/bg.jpg'); */
   background-size: contain;
   background-position: top left;
   position: relative;
@@ -14589,7 +14589,7 @@ label textarea {
 **********************/
 .subordinate {
   padding-top: 3.9375rem;
-  background-image: url("../images/bg-web-circle-image.png");
+  /* background-image: url('../images/bg-web-circle-image.png'); */
   background-size: contain;
 }
 .subordinate h2 {
