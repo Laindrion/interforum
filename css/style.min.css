@@ -13291,7 +13291,7 @@ h2 {
   position: absolute;
   width: 7.375rem;
   height: 7.6875rem;
-  background: oklch(65.87% 0.118 261.78);
+  background: oklch(21.61% 0.1006 265.27);
   border-radius: 50%;
 }
 
@@ -14689,6 +14689,8 @@ label textarea {
   mask-position: top center;
   -webkit-mask-image: url("../images/oval.svg");
   mask-image: url("../images/oval.svg");
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .news-child-footer-meta {
