@@ -13326,6 +13326,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   position: relative;
+  /*  background: #000; */
 }
 
 .header.sticky {
@@ -13540,6 +13541,9 @@ label textarea {
   grid-template-rows: 1fr;
 }
 
+.accardion-btn {
+  position: relative;
+}
 .accardion-btn::after {
   content: "";
   position: absolute;
@@ -13705,9 +13709,7 @@ label textarea {
 }
 
 .circle__btn:hover span {
-  -webkit-clip-path: circle(200px at 10px 50%) !important;
   clip-path: circle(200px at 10px 50%) !important;
-  -webkit-clip-path: circle(200px at 10px calc(50% + 0px)) !important;
   clip-path: circle(200px at 10px calc(50% + 0px)) !important;
   -webkit-transition: 0.6s ease-in-out;
   -o-transition: 0.6s ease-in-out;
@@ -13757,9 +13759,7 @@ label textarea {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  -webkit-clip-path: circle(40px at 16px 50%);
   clip-path: circle(40px at 16px 50%);
-  -webkit-clip-path: circle(40px at 16px calc(50% + 0px));
   clip-path: circle(40px at 16px calc(50% + 0px));
 }
 
@@ -14440,8 +14440,8 @@ label textarea {
   background-repeat: no-repeat;
   width: 0rem;
   height: 0rem;
-  width: 17%;
-  height: 78%;
+  width: 26%;
+  height: 35%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -15589,13 +15589,9 @@ label textarea {
     **********************
 **********************/
 .faq {
-  padding-top: 6rem;
   padding-bottom: 13.5rem;
   position: relative;
   z-index: 0;
-}
-.faq h2 {
-  padding-bottom: 1.25rem;
 }
 .faq::before {
   z-index: -1;
@@ -17195,6 +17191,10 @@ label textarea {
   html.open .header.secondary {
     z-index: unset;
   }
+  .logo {
+    height: 65px;
+    width: 115px;
+  }
   .menu {
     padding: 1.625rem 0;
   }
@@ -17329,7 +17329,7 @@ label textarea {
   }
   .about__img {
     max-width: 100%;
-    height: 24.125rem;
+    /*  height: 24.125rem; */
   }
   .competition .row:nth-child(even) img {
     display: block;
@@ -17365,6 +17365,7 @@ label textarea {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    opacity: 0.2;
   }
   .contacts .row {
     row-gap: 2rem;
