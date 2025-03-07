@@ -14011,7 +14011,7 @@ label textarea {
   transition: 0.4s all;
   position: absolute;
   /*  left: 50%;
-  transform: translateX(-25%); */
+     transform: translateX(-25%); */
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -14667,6 +14667,25 @@ label textarea {
   margin: 1.25rem 0;
 }
 
+.news-child-content:has(.ql-align-center) {
+  text-align: center;
+}
+
+.news-child-content ul {
+  font-family: "Inter", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  color: oklch(33.68% 0 0);
+}
+.news-child-content ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  color: oklch(33.68% 0 0);
+}
+
 .news-child-img {
   max-height: 40rem;
   height: 100%;
@@ -14835,7 +14854,7 @@ label textarea {
 }
 .contacts__message input, .contacts input {
   /* margin-top: -1.25rem;
-  transition: margin-top .4s; */
+    transition: margin-top .4s; */
 }
 
 .contacts {
@@ -14966,9 +14985,9 @@ label textarea {
 }
 .location__img {
   /*  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%); */
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%); */
   width: 3.0125rem;
   height: 3.3125rem;
   z-index: 1;
@@ -15264,22 +15283,22 @@ label textarea {
   text-align: center;
   position: relative;
   /*  background-image: url('../images/cover.png');
-  background-size: cover;
-  background-repeat: no-repeat; */
+   background-size: cover;
+   background-repeat: no-repeat; */
   z-index: 0;
   padding: 20px 0;
   /*    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: $black;
-      opacity: .3;
-      z-index: -1;
-  } */
+       content: '';
+       position: absolute;
+       display: block;
+       width: 100%;
+       height: 100%;
+       left: 0;
+       top: 0;
+       background: $black;
+       opacity: .3;
+       z-index: -1;
+   } */
 }
 .org_structure::before {
   display: none;
@@ -15569,8 +15588,8 @@ label textarea {
 
 @media (max-width: 1085px) {
   /*    .ql-syntax {
-      padding-left: 27rem !important;
-  } */
+       padding-left: 27rem !important;
+   } */
   .org_structure .tree_cover {
     padding: 0 3rem 0 0;
   }
@@ -15741,10 +15760,10 @@ label textarea {
 }
 .contacts__details::after {
   /*   @extend %circle;
-  width: 3rem;
-  height: 3rem;
-  right: -1rem;
-  top: -5rem; */
+    width: 3rem;
+    height: 3rem;
+    right: -1rem;
+    top: -5rem; */
 }
 
 /* It's not a section, it's actually inside the contacts__info section. */
@@ -16467,8 +16486,8 @@ label textarea {
 }
 .uzbekistan__holidays-item > .row .col-lg-6 {
   /*  display: flex;
-  flex-direction: column;
-  justify-content: center; */
+      flex-direction: column;
+      justify-content: center; */
 }
 .uzbekistan__holidays-item p {
   text-wrap: pretty;
@@ -16483,54 +16502,54 @@ label textarea {
   padding-bottom: 7.9375rem;
   position: relative;
   /*  .pagination {
-      display: flex;
-      justify-content: flex-end;
-      gap: 0.375rem;
+       display: flex;
+       justify-content: flex-end;
+       gap: 0.375rem;
 
-      a {
-          @include fontMt(14, 500, 20, $second_main);
-          border: 1px solid $second_main;
-          border-radius: 10px;
+       a {
+           @include fontMt(14, 500, 20, $second_main);
+           border: 1px solid $second_main;
+           border-radius: 10px;
 
-          padding: 0.75rem 0;
+           padding: 0.75rem 0;
 
-          position: relative;
+           position: relative;
 
-          background: $white;
+           background: $white;
 
-          &.disabled {
-              opacity: .5;
-          }
-      }
+           &.disabled {
+               opacity: .5;
+           }
+       }
 
-      .next {
-          padding-right: 3.775rem;
-          padding-left: 0.875rem;
+       .next {
+           padding-right: 3.775rem;
+           padding-left: 0.875rem;
 
 
 
-          &::after {
-              @include pseudo(url('../images/arrow-tail-purple.svg'), 17.5, 14.6);
-              right: 1.181219rem;
+           &::after {
+               @include pseudo(url('../images/arrow-tail-purple.svg'), 17.5, 14.6);
+               right: 1.181219rem;
 
-              top: 50%;
-              transform: translateY(-50%);
-          }
-      }
+               top: 50%;
+               transform: translateY(-50%);
+           }
+       }
 
-      .previous {
-          padding-right: 1.375rem;
-          padding-left: 4.75rem;
+       .previous {
+           padding-right: 1.375rem;
+           padding-left: 4.75rem;
 
-          &::before {
-              @include pseudo(url('../images/arrow-tail-purple.svg'), 19.1, 17.8);
+           &::before {
+               @include pseudo(url('../images/arrow-tail-purple.svg'), 19.1, 17.8);
 
-              transform: rotate(180deg);
+               transform: rotate(180deg);
 
-              left: 0.906rem;
-          }
-      }
-  } */
+               left: 0.906rem;
+           }
+       }
+   } */
 }
 .events__wrapper {
   display: -webkit-box;
@@ -16576,8 +16595,8 @@ label textarea {
   padding-right: 0.625rem;
   border-right: 1px solid oklch(84.83% 0 0);
   /* div:last-child {
-      grid-column: 3 / 4;
-  } */
+        grid-column: 3 / 4;
+    } */
 }
 .events__item div:not(.row, .col-lg-6) {
   display: -webkit-box;
@@ -16693,8 +16712,8 @@ label textarea {
   flex-direction: column;
   gap: 1.25rem;
   /*  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem; */
 }
 .gallery__inner {
   display: grid;
