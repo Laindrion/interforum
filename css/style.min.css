@@ -17571,7 +17571,7 @@ label textarea {
   }
   .about__img {
     max-width: 100%;
-    height: 24.125rem;
+    /* height: 24.125rem; */
   }
   .competition .row:nth-child(even) img {
     display: block;
@@ -17607,6 +17607,7 @@ label textarea {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    opacity: .1;
   }
   .contacts .row {
     row-gap: 2rem;
