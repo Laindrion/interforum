@@ -15415,7 +15415,7 @@ label textarea {
 .org_structure .treee .tree_first_inner .child_second:last-child:has(> ul):before {
   right: -16px;
   left: auto;
-  height: calc(100% - 68px);
+  height: calc(100% - 88px);
   top: -11px;
 }
 .org_structure .treee .tree_first_inner .child_second:last-child .treee_second_inner {
@@ -15480,7 +15480,7 @@ label textarea {
   border-left: 1px solid oklch(0% 0 0);
   top: 0;
   left: 0;
-  height: calc(100% - 79px);
+  height: calc(100% - 99px);
 }
 .org_structure .child_second:first-child::after {
   left: 103%;
