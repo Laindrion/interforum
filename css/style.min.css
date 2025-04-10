@@ -17067,6 +17067,9 @@ label textarea {
   column-gap: 2rem;
   row-gap: 1rem;
 }
+.footer__list > li:nth-child(4) {
+  display: none;
+}
 .footer__list h4 {
   font-family: "Inter", sans-serif;
   font-size: 1.25rem;
