@@ -17933,6 +17933,9 @@ label textarea {
   html {
     font-size: 9px;
   }
+  .logo {
+    height: 90px;
+  }
 }
 /************************ 
 ******************
