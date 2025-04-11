@@ -16719,6 +16719,7 @@ label textarea {
   .events img {
     -webkit-mask-size: 22rem;
     mask-size: 22rem;
+    max-width: 100%;
   }
 }
 /**********************
