@@ -15640,8 +15640,8 @@ label textarea {
   width: 22.5rem;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 85%;
-  mask-size: 85%;
+  -webkit-mask-size: 22rem;
+  mask-size: 22rem;
   -webkit-mask-position: top center;
   mask-position: top center;
   -webkit-mask-image: url("../images/oval.svg");
@@ -17348,6 +17348,9 @@ label textarea {
     top: 65%;
     z-index: -1;
   }
+  .gallery__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 991px) {
   html.open body {
@@ -17853,6 +17856,9 @@ label textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .gallery__inner {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 550px) {
