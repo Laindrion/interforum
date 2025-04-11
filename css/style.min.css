@@ -17210,6 +17210,9 @@ label textarea {
   html {
     font-size: 13px;
   }
+  .circle__btn span {
+    margin-bottom: 6px;
+  }
   .org_structure .child_first:first-child::before {
     width: 37rem;
   }
@@ -17933,8 +17936,12 @@ label textarea {
   html {
     font-size: 9px;
   }
+  .circle__btn span {
+    margin-bottom: 9px;
+  }
   .logo {
     height: 90px;
+    width: 140px;
   }
 }
 /************************ 
