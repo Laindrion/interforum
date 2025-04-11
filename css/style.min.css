@@ -16680,7 +16680,8 @@ label textarea {
   gap: 1.25rem;
 }
 .events__list-item img {
-  width: 6.0625rem;
+  max-width: 6.0625rem;
+  width: 100%;
   height: 5.8125rem;
   border-radius: 10px;
   -webkit-mask-repeat: no-repeat;
