@@ -14390,14 +14390,14 @@ label textarea {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 1.75rem;
+  /* gap: 1.75rem; */
   height: 100%;
 }
 .about p {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5625rem;
+  line-height: 1.8625rem;
   color: oklch(33.68% 0 0);
   /* max-width: 447px; */
 }
@@ -15110,7 +15110,7 @@ label textarea {
   width: 8.75rem;
   height: 8.75rem;
   right: -4.375rem;
-  top: -6rem;
+  top: -9rem;
   z-index: -1;
 }
 .management .row {
