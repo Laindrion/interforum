@@ -15297,7 +15297,7 @@ label textarea {
 
 ol.organizational-chart {
   background: oklch(100% 0 0);
-  padding: 2rem;
+  padding: 2rem !important;
   border-radius: 20px;
   width: 100%;
 }
