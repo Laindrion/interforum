@@ -15288,6 +15288,20 @@ label textarea {
   display: none;
 }
 
+.org_structure pre {
+  white-space: normal;
+}
+.org_structure .ql-syntax {
+  white-space: normal;
+}
+
+ol.organizational-chart {
+  background: oklch(100% 0 0);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+}
+
 ol.organizational-chart,
 ol.organizational-chart ol,
 ol.organizational-chart li,
