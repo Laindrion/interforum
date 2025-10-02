@@ -20834,3 +20834,7 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
           line-height: 1.625rem;
    }
 }
+
+.main{
+   z-index: 1;
+}
