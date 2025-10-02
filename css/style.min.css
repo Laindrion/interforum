@@ -20814,3 +20814,23 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
     top: 3em;
   }
 }
+
+@media (max-width: 768px){
+   .org_structure-modal__content{
+      width: 90%;
+   }
+
+   .org_structure-modal__content h2{
+          font-size: 1.375rem;
+          line-height: 2.1875rem;
+   }
+
+   .org_structure-modal__content .org_structure-modal__subtitle{
+      font-size: 0.75rem;
+          line-height: 1rem;
+   }
+   .org_structure-modal__content p{
+      font-size: 0.8rem;
+          line-height: 1.625rem;
+   }
+}
