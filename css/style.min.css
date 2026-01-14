@@ -16163,7 +16163,7 @@ label textarea {
 }
 
 .about__img img {
-   height: 100%;
+   height: auto;
    border-radius: 10px;
 }
 
