@@ -39106,3 +39106,75 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     height: 190px;
   }
 }
+
+
+/* ORG STRUCTURE MODAL — RESPONSIVE FIXES */
+.org_structure-modal {
+  overflow-y: auto;
+}
+
+.org_structure-modal__content {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: min(880px, 100% - 2rem);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+
+/* Short screens: pin to top instead of centering off-screen */
+@media (max-height: 620px) {
+  .org_structure-modal__content {
+    top: 1rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+/* Tablet / phone: stack photo above text */
+@media (max-width: 768px) {
+  .org_structure-modal__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 1.25rem 1.75rem;
+    text-align: left;
+  }
+  .org_structure-modal .profile-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .org_structure-modal__content h2 {
+    font-size: 1.4rem;
+  }
+  .org_structure-modal__content .org_structure-modal__subtitle {
+    font-size: 1.05rem;
+  }
+  .org_structure-modal__content p {
+    line-height: 1.8;
+    text-align: left;
+  }
+  .org_structure .profile {
+    width: 200px;
+    height: 240px;
+  }
+}
+/* Small phones */
+@media (max-width: 480px) {
+  .org_structure-modal__content {
+    padding: 2.25rem 1rem 1.5rem;
+  }
+  .org_structure-modal__content h2 {
+    font-size: 1.2rem;
+  }
+  .org_structure .profile {
+    width: 160px;
+    height: 190px;
+  }
+}
