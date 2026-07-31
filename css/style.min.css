@@ -15632,7 +15632,7 @@ label textarea {
    width: 100%;
    top: 28px;
    left: 9px;
-   opacity: 0.4;
+   /* opacity: 0.4; */
    text-align: left;
    font-size: 1rem;
    font-family: "Inter", sans-serif;
