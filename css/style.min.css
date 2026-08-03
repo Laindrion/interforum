@@ -19799,35 +19799,38 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 }
 
 .footer__message {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-   margin-bottom: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
 .footer__message h2 {
-   font-family: "ALS Hauss", sans-serif;
-   font-size: 3.125rem;
-   font-weight: 700;
-   line-height: 2.8125rem;
-   color: oklch(100% 0 0);
+  font-family: "ALS Hauss", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 2.8125rem;
+  color: oklch(100% 0 0);
 }
-
-.footer__message a {
-   font-family: "Montserrat", sans-serif;
-   font-size: 1.125rem;
-   font-weight: 500;
-   line-height: 1.625rem;
-   color: oklch(21.61% 0.1006 265.27);
-   background: oklch(100% 0 0);
-   border-radius: 30px;
-   padding: 0.625rem 5.25rem;
-   position: relative;
+.footer__message .footer__logo-member {
+  width: 80px;
 }
-
+.footer__message .footer__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  color: oklch(21.61% 0.1006 265.27);
+  background: oklch(100% 0 0);
+  border-radius: 30px;
+  padding: 0.625rem 5.25rem;
+  position: relative;
+}
 .footer__inner {
    display: -webkit-box;
    display: -ms-flexbox;
